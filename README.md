@@ -84,6 +84,68 @@ Open your browser and navigate to `http://localhost:5173`.
 
 ---
 
+## ☁️ Deployment Guide (Cloudflare Pages)
+
+Follow these step-by-step instructions to deploy the application on **Cloudflare Pages**.
+
+### Option 1: Automatic Deployment via Git Integration (Recommended)
+
+1. **Push Changes to GitHub**:
+   Ensure all code is committed and pushed to your GitHub repository:
+   ```bash
+   git add .
+   git commit -m "docs: add deployment instructions"
+   git push origin main
+   ```
+
+2. **Connect Repository to Cloudflare Pages**:
+   - Log into the [Cloudflare Dashboard](https://dash.cloudflare.com/).
+   - Navigate to **Workers & Pages** > **Create application** > **Pages** tab.
+   - Click **Connect to Git** and authorize your GitHub account.
+   - Select your repository (`sketch-portfolio`).
+
+3. **Configure Build Settings**:
+   - **Project Name**: `sketch-portfolio`
+   - **Production Branch**: `main`
+   - **Framework Preset**: `Vite`
+   - **Build Command**: `npm run build`
+   - **Build Output Directory**: `dist`
+
+4. **Set Environment Variables**:
+   - Under **Environment variables (advanced)**, add:
+     - `NODE_VERSION` = `20`
+
+5. **Save & Deploy**:
+   - Click **Save and Deploy**. Cloudflare will run the build process and deploy your site.
+   - Any future commits pushed to `main` will automatically trigger automatic deployments.
+
+---
+
+### Option 2: Direct Terminal Deployment via Wrangler CLI
+
+If you want to deploy directly from your local terminal:
+
+1. **Authenticate with Cloudflare**:
+   ```bash
+   npx wrangler login
+   ```
+
+2. **Build the Production Bundle**:
+   ```bash
+   npm run build
+   ```
+
+3. **Deploy the `dist/` Directory**:
+   ```bash
+   npx wrangler pages deploy dist --project-name=sketch-portfolio
+   ```
+
+4. **Complete Deployment**:
+   - Wrangler will deploy your `dist/` folder and output the live deployment URL.
+
+---
+
+
 ## 📂 Project Structure
 
 ```text
