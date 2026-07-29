@@ -1,190 +1,119 @@
-<div align="center">
+# 🎨 Sketch Portfolio
 
-  # ✦ SHAN ✦
-  ### CREATIVE FULL STACK DEVELOPER & INTERACTIVE WEB ENGINEER
-
-  <p align="center">
-    <i>"Building immersive digital experiences where design, motion, and engineering become one."</i>
-  </p>
-
-  <p align="center">
-    <a href="https://shan.dev"><img src="https://img.shields.io/badge/Portfolio-shan.dev-00D9FF?style=for-the-badge&logo=vercel&logoColor=000" alt="Portfolio Badge"/></a>
-    <a href="https://react.dev"><img src="https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=000" alt="React Badge"/></a>
-    <a href="https://threejs.org"><img src="https://img.shields.io/badge/Three.js-WebGL-000000?style=for-the-badge&logo=three.js&logoColor=fff" alt="Three.js Badge"/></a>
-    <a href="https://gsap.com"><img src="https://img.shields.io/badge/GSAP-Animation-88CE02?style=for-the-badge&logo=greensock&logoColor=fff" alt="GSAP Badge"/></a>
-    <a href="https://supabase.com"><img src="https://img.shields.io/badge/Supabase-Database-3ECF8E?style=for-the-badge&logo=supabase&logoColor=fff" alt="Supabase Badge"/></a>
-  </p>
-
-  ---
-</div>
-
-## 📌 Executive Overview
-
-This repository houses the source code for **Shan's Awwwards-level interactive portfolio website**. Designed with an uncompromising balance of visual storytelling and software engineering, the platform blends a 3D WebGL hand-drawn notebook aesthetic with high-performance full stack architecture.
-
-Inspired by Apple, Stripe, Linear, and Framer, the application challenges conventional web layouts through:
-- Real-time 3D spatial navigation & virtual room routing
-- High-precision scrollytelling & 360° image sequence scrubbers
-- Hand-drawn line-art sketch aesthetics & custom shader material reveals
-- Accessible HTML screen-reader overlays matching WebGL canvas viewports
+> **An immersive, hand-drawn 3D interactive portfolio experience built with React 19, Three.js, React Three Fiber, and GSAP.**
 
 ---
 
-## ✨ Core Features & Technical Highlights
-
-### 🎨 1. Interactive 3D Spatial Canvas
-- **Hero Corridor**: Real-time camera depth navigation with split-letter typography shaders and a custom hand-drawn sketch avatar.
-- **The About Sky**: Infinite looping 3D cloud viewports featuring floating capability cards, roadmap islands, and skill balloons.
-- **The Gallery**: Interactive paper-texture project cards with spatial WebGL depth tilts and project case study modals.
-- **The Studio**: Rotating monitor towers displaying technical case studies and WebGL micro-interaction demos.
-- **Contact Sea**: Floating 3D social barrels and interactive message paper submission workflow.
-
-### ⚡ 2. Performance Engineering & Core Web Vitals
-- **Sub-Second Load Times**: Compressed WebP texture pipelines with lazy asset preloading strategies.
-- **60 FPS Sustained Renders**: Optimized `@react-three/fiber` render loop with zero garbage collection spikes in `useFrame`.
-- **Fluid Smooth Scroll**: High-precision scroll synchronization powered by GSAP ScrollTrigger and Lenis smooth scroll mechanics.
-
-### ✏️ 3. Hand-Drawn Sketch Design System
-- **Custom Typography**: Integrated `Rubik Scribble` & `Cabin Sketch` Google TTF typefaces.
-- **Custom Shaders**: `RevealBasicMaterial` brush-stroke reveal shaders for card hovers and canvas transitions.
-- **Personal Avatar**: Custom hand-drawn line-art avatar sprite matching real-world personal identity.
-
-### ♿ 4. Accessibility & Inclusive Design (WCAG 2.1 AA)
-- **ScreenReaderOverlay**: Invisible HTML accessibility layer synced to 3D canvas coordinates for screen readers and keyboard navigation.
-- **Reduced Motion Support**: Automated GSAP animation fallbacks respecting user `prefers-reduced-motion` browser settings.
+[![React 19](https://img.shields.io/badge/React-19.2.7-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Three.js](https://img.shields.io/badge/Three.js-0.185-black?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
+[![React Three Fiber](https://img.shields.io/badge/R3F-9.6-000000?style=for-the-badge&logo=react&logoColor=61DAFB)](https://docs.pmnd.rs/react-three-fiber)
+[![GSAP](https://img.shields.io/badge/GSAP-3.15-88CE02?style=for-the-badge&logo=greensock&logoColor=black)](https://gsap.com/)
+[![Vite](https://img.shields.io/badge/Vite-8.1-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## ✨ Overview
 
-| Layer | Technology Stack |
+**Sketch Portfolio** is a unique, sketch-book themed 3D interactive web app. It blends hand-drawn aesthetics with real-time 3D web graphics, spatial ambient audio, interactive room exploration, and smooth paper-style transitions.
+
+---
+
+## 🚀 Key Features
+
+- 🎭 **3D Hand-Drawn Interactive World**: Explore 3D sketch rooms and environments rendered via React Three Fiber and Three.js.
+- ⚡ **Adaptive Performance Engine**: Dynamic hardware tiering that auto-scales DPR, shadows, antialiasing, and texture resolution based on the user's GPU & CPU capabilities.
+- 📜 **Handwritten & GSAP Animations**: Smooth camera movements, custom paper transitions, and animated stroke-drawing effects via Vara.js and GSAP.
+- 🎧 **Spatial Audio System**: Custom audio manager providing room ambience, sound effects, and volume controls.
+- 🗺️ **Navigation & Teleportation**: Quick-access map UI and deep-link routing for seamless room switching.
+- 📱 **Responsive & Mobile Ready**: Tailored layouts, touch controls, and optimized asset preloading across desktop, tablet, and mobile browsers.
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
 | :--- | :--- |
-| **Frontend Framework** | React 18, Vite 6, HTML5, Vanilla CSS3 (Custom Tokens) |
-| **3D & WebGL Engine** | Three.js, `@react-three/fiber`, `@react-three/drei` |
-| **Animation Physics** | GSAP 3 (ScrollTrigger, Observer), Framer Motion, Lenis |
-| **Backend & APIs** | Node.js, Express.js REST APIs |
-| **Database & Auth** | Supabase, PostgreSQL |
-| **Asset Pipeline** | WebP Texture Optimization, Troika-3D Text (.ttf) |
-| **Deployment & Host** | Vercel / Cloudflare Edge Infrastructure |
+| **Core Framework** | React 19, React Router 7, Vite |
+| **3D & Canvas** | Three.js, React Three Fiber (`@react-three/fiber`), Drei (`@react-three/drei`), `@react-three/postprocessing` |
+| **Animation & Motion** | GSAP (`@gsap/react`), Vara.js, Custom CSS/SCSS keyframes |
+| **Styling** | Sass (SCSS), Modern CSS Custom Properties |
+| **State & Context** | React Context API (`AudioManager`, `PerformanceContext`, `SceneContext`, `AchievementsContext`) |
+| **Icons & Assets** | Lucide React, Custom Hand-Drawn WebP/SVG Textures |
 
 ---
 
-## 💼 Featured Flagship Projects
-
-### 1. Apple Vision Pro Interactive Experience
-> *Spatial Computing & 3D Canvas Rendering*
-- **Technologies**: React, Three.js, WebGL Shaders, GSAP ScrollTrigger
-- **Key Features**: Frame-by-frame 3D canvas interaction, luxury depth glass shaders, spatial parallax mechanics.
-- **Performance**: Sustained 60FPS across 120 high-res WebP canvas frames.
-
-### 2. BMW M4 GT3 EVO Showcase
-> *High-Performance Automotive & Web Audio Synthesis*
-- **Technologies**: React, Web Audio API, Canvas 360°, GSAP Physics
-- **Key Features**: Multi-threaded pre-buffered image scrubbers, real-time telemetry HUD, Web Audio doppler pitch shifts.
-- **Performance**: Sub-100ms response time on 360° rotation interactions.
-
-### 3. Luxury Tailor Website
-> *Haute Couture Atelier & WebGL Fabric Motion*
-- **Technologies**: React, Three.js, WebGL Canvas, CSS Grid
-- **Key Features**: Custom WebGL fabric warp shaders, editorial serif typography, interactive garment sizing matrix.
-- **Performance**: 99/100 Lighthouse performance score.
-
-### 4. Fashion Jewellery Ecommerce Engine
-> *Full Stack Luxury E-Commerce Engine*
-- **Technologies**: Next.js, Supabase, PostgreSQL, Cloudinary REST API
-- **Key Features**: Sub-second faceted edge filtering, optimistic cart state sync, real-time stock sync.
-- **Performance**: 0.4s Time-to-First-Byte (TTFB).
-
-### 5. Photography Accessories Platform
-> *Relational Compatibility Matrix Engine*
-- **Technologies**: Express.js, Node.js, PostgreSQL, React
-- **Key Features**: Lens compatibility matrix engine, dark room UI, indexed database queries.
-- **Performance**: Sub-50ms API response time.
-
----
-
-## 📁 Repository Structure
-
-```
-shan-portfolio-new/
-├── public/
-├── src/
-│   ├── components/
-│   │   ├── canvas/             # 3D WebGL Scenes & Rooms
-│   │   │   ├── corridor/       # Hero 3D Corridor, HeroText, Avatar
-│   │   │   ├── entrance/       # Gate, Doors & Sign System
-│   │   │   └── rooms/          # About, Gallery, Studio, Contact Rooms
-│   │   ├── dom/                # DOM Components & Preloader
-│   │   ├── ui/                 # Accessibility Overlays & Navigation
-│   │   ├── CaseStudyModal.jsx  # Comprehensive Case Study Modal
-│   │   └── ContactForm.jsx     # Agency Inquiry Form Component
-│   ├── context/                # Scene, Audio & Achievement Contexts
-│   ├── data/                   # Projects, Skills & Journey Data Models
-│   │   ├── projects.js         # Flagship Projects & Case Studies
-│   │   ├── skills.js           # 5 Tech Stack Categories
-│   │   └── journey.js          # 6 Experience Stages
-│   ├── hooks/                  # Document Metadata & Scene Hooks
-│   ├── sections/               # Main Page HTML Sections
-│   │   ├── Hero.jsx            # Hero Branding & Headline
-│   │   ├── About.jsx           # Personal Biography & 6 Highlight Cards
-│   │   ├── CreatorBuilder.jsx  # Core Philosophy Pillars
-│   │   ├── Projects.jsx        # Project Portfolio Grid
-│   │   ├── Contact.jsx         # Contact Form & Copy Email Trigger
-│   │   └── Footer.jsx          # Branding Footer
-│   ├── styles/                 # SCSS & CSS Modules
-│   └── index.css               # Core CSS Design System & Token Variables
-├── index.html                  # SEO & JSON-LD Structured Data Schema
-└── package.json
-```
-
----
-
-## 🚀 Local Development & Setup
+## ⚙️ Getting Started
 
 ### Prerequisites
-- Node.js `v18.0.0` or higher
-- npm `v9.0.0` or higher
 
-### Installation Steps
+Ensure you have **Node.js 18+** and **npm** installed on your system.
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/shan/shan-portfolio.git
-   cd shan-portfolio
-   ```
+### 1. Clone the Repository
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+```bash
+git clone https://github.com/shajith23/sketch-portfolio.git
+cd sketch-portfolio
+```
 
-3. **Start the local development server**:
-   ```bash
-   npm run dev
-   ```
-   Open `http://localhost:5173` in your browser.
+### 2. Install Dependencies
 
-4. **Build for production**:
-   ```bash
-   npm run build
-   ```
+```bash
+npm install
+```
+
+### 3. Start Development Server
+
+```bash
+npm run dev
+```
+
+Open your browser and navigate to `http://localhost:5173`.
 
 ---
 
-## 📬 Contact & Connect
+## 📦 Scripts Overview
 
-- **Name**: Shan
-- **Title**: Creative Full Stack Developer
-- **Location**: India 🇮🇳 (UTC +5:30)
-- **Direct Email**: [contact@shan.dev](mailto:contact@shan.dev)
-- **Portfolio URL**: [https://shan.dev](https://shan.dev)
-- **Social Profiles**: [GitHub](https://github.com) • [LinkedIn](https://linkedin.com) • [Twitter / X](https://twitter.com)
+| Command | Action |
+| :--- | :--- |
+| `npm run dev` | Launch local development server via Vite |
+| `npm run build` | Bundle and optimize production files to `dist/` |
+| `npm run preview` | Serve the local `dist/` production build |
+| `npm run lint` | Run Oxlint for fast code quality checks |
 
 ---
 
-<div align="center">
-  <p>Designed with intention. Engineered for performance.</p>
-  <p>© 2026 <b>SHAN</b>. All rights reserved.</p>
-</div>
-# sketch-portfolio
-# sketch-portfolio
+## 📂 Project Structure
+
+```text
+sketch-portfolio/
+├── dist/                  # Production build output
+├── public/                # Static assets, fonts, sounds, textures & models
+├── src/
+│   ├── assets/            # Project assets & branding
+│   ├── components/
+│   │   ├── canvas/        # 3D R3F Experience, lighting & 3D room objects
+│   │   ├── dom/           # DOM overlays, preloader & paper transitions
+│   │   └── ui/            # Navigation controls, achievements & HUD overlays
+│   ├── config/            # Texture preload manifests & device rules
+│   ├── context/           # Audio, performance, scene & achievements state
+│   ├── hooks/             # Custom React hooks (meta tags, resize, interaction)
+│   ├── sections/          # 2D/3D Sections (Hero, About, Projects, Skills, Contact)
+│   ├── styles/            # SCSS stylesheets & visual tokens
+│   ├── utils/             # Sound manager & math helper functions
+│   ├── App.jsx            # Main Application entry & Canvas context provider
+│   └── index.css          # Global styling tokens & custom utility classes
+├── package.json           # Dependencies and build scripts
+└── README.md              # Project documentation
+```
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+<p align="center">
+  Crafted with ❤️ and ☕ using React 19 & Three.js
+</p>
