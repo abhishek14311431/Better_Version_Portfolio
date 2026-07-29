@@ -179,15 +179,22 @@ const useInfiniteCamera = ({
 
     // Handle touch start (mobile)
     const handleTouchStart = useCallback((e) => {
-        // Always track touch start for potential parallax
-        touchStart.current.x = e.touches[0].clientX;
-        touchStart.current.y = e.touches[0].clientY;
+        if (!e) return;
+        const touch = e.touches?.[0] || e.targetTouches?.[0] || e;
+        if (touch && typeof touch.clientX === 'number') {
+            touchStart.current.x = touch.clientX;
+            touchStart.current.y = touch.clientY;
+        }
     }, []);
 
     // Handle touch move (mobile scroll + horizontal glance)
     const handleTouchMove = useCallback((e) => {
-        const currentX = e.touches[0].clientX;
-        const currentY = e.touches[0].clientY;
+        if (!e) return;
+        const touch = e.touches?.[0] || e.targetTouches?.[0] || e;
+        if (!touch || typeof touch.clientX !== 'number') return;
+
+        const currentX = touch.clientX;
+        const currentY = touch.clientY;
 
         // Vertical scroll - only when scroll enabled
         if (scrollEnabledRef.current) {
@@ -264,12 +271,12 @@ const useInfiniteCamera = ({
                 handleWheel(e.event);
             },
             onPress: (e) => {
-                if (e.event.touches && e.event.touches.length > 0) {
+                if (e.event) {
                     handleTouchStart(e.event);
                 }
             },
             onDrag: (e) => {
-                if (e.event.touches && e.event.touches.length > 0) {
+                if (e.event) {
                     handleTouchMove(e.event);
                 }
             }

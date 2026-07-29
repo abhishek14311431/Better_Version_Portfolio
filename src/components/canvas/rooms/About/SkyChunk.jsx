@@ -1,5 +1,6 @@
 import { useMemo, useRef } from 'react';
-import { useFrame, useThree, useLoader } from '@react-three/fiber';
+import { useFrame, useThree } from '@react-three/fiber';
+import { useTexture } from '@react-three/drei';
 import * as THREE from 'three';
 
 /**
@@ -34,6 +35,7 @@ const CLOUD_TEXTURES = [
 
 const SkyChunk = ({ chunkIndex = 0, seed = 0, scrollProgressRef }) => {
     const zOffset = -(chunkIndex * CHUNK_LENGTH) - 15;
+    const cloudTextures = useTexture(CLOUD_TEXTURES);
 
     const clouds = useMemo(() => {
         const items = [];
@@ -71,6 +73,7 @@ const SkyChunk = ({ chunkIndex = 0, seed = 0, scrollProgressRef }) => {
                     scale={cloud.scale}
                     baseOpacity={cloud.baseOpacity}
                     textureIndex={cloud.textureIndex}
+                    texture={cloudTextures[cloud.textureIndex]}
                     driftSpeed={cloud.driftSpeed}
                     driftAmount={cloud.driftAmount}
                     bobAmount={cloud.bobAmount}
@@ -88,6 +91,7 @@ const Cloud = ({
     scale,
     baseOpacity,
     textureIndex,
+    texture,
     driftSpeed = 0.5,
     driftAmount = 0.8,
     bobAmount = 0.15,
@@ -100,9 +104,6 @@ const Cloud = ({
 
     // Store base position for animation
     const basePosition = useRef(position);
-
-    // Load the specific cloud texture
-    const texture = useLoader(THREE.TextureLoader, CLOUD_TEXTURES[textureIndex]);
 
     // LEGACY FIX: Use original aspect ratios to prevent stretching after POT conversion
     const legacyCloudAspects = {

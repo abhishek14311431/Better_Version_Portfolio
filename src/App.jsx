@@ -125,7 +125,11 @@ function AppContent() {
                 alpha: false,
                 powerPreference: settings.powerPreference,
                 localClippingEnabled: true,
-                failIfMajorPerformanceCaveat: true
+                failIfMajorPerformanceCaveat: false
+              }}
+              onCreated={({ gl }) => {
+                const maxAnisotropy = gl.capabilities.getMaxAnisotropy();
+                gl.outputColorSpace = THREE.SRGBColorSpace;
               }}
               dpr={settings.dpr}
               shadows={settings.shadows}

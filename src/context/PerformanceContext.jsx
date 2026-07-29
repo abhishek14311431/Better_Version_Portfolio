@@ -29,7 +29,7 @@ const SETTINGS = {
     particleCount: 0.6, // 60% particles
   },
   [TIERS.LOW]: {
-    dpr: [0.8, 1], // Minimum 0.8x pixel density to avoid extreme pixelation
+    dpr: [1, 1], // Minimum 1.0x pixel density to maintain crisp resolution
     shadows: false, // Disable shadows completely
     antialias: false, // Disable AA to maximize FPS
     powerPreference: "low-power",

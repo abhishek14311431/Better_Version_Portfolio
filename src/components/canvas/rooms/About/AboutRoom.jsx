@@ -60,7 +60,7 @@ const AboutRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
     // Track if we've signaled ready
     const hasSignaledReady = useRef(false);
     const frameCount = useRef(0);
-    const FRAMES_TO_WAIT = 25;
+    const FRAMES_TO_WAIT = 3;
 
     // Momentum-based scroll state
     const scrollPosition = useRef(0);
@@ -94,22 +94,8 @@ const AboutRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
     // Ready detection + flight animation
     useFrame((state, delta) => {
         if (!hasSignaledReady.current) {
-            // Force rendering of all objects (even outside frustum) to compile shaders
-            if (roomRef.current) {
-                roomRef.current.traverse((child) => {
-                    if (child.isMesh) child.frustumCulled = false;
-                });
-            }
-
             frameCount.current++;
             if (frameCount.current >= FRAMES_TO_WAIT) {
-                // Restore frustum culling for performance
-                if (roomRef.current) {
-                    roomRef.current.traverse((child) => {
-                        if (child.isMesh) child.frustumCulled = true;
-                    });
-                }
-
                 hasSignaledReady.current = true;
                 onReady?.();
                 // trigger achievement hint when showing the room

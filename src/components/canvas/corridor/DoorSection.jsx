@@ -510,8 +510,8 @@ const DoorSection = ({
                 // So we do NOT open immediately anymore. We let the onReady callback handle it.
                 // But we still set the flag so handleRoomReady knows to use fast animation.
 
-                // Fallback: If room doesn't call onReady within 8000ms, open door anyway
-                // This ensures all rooms work even if they don't implement onReady
+                // Fallback: If room doesn't call onReady within 2500ms, open door anyway
+                // This ensures all rooms work even if they take slightly longer or don't implement onReady
                 loadTimeoutRef.current = setTimeout(() => {
                     if (!roomReadyRef.current) {
                         console.warn(`[DoorSection ${label}] Room load timeout - forcing open`);
@@ -520,7 +520,7 @@ const DoorSection = ({
                         // If it timed out, we still use the current mode preference
                         openDoor(useFastMode);
                     }
-                }, 8000);
+                }, 2500);
             }
         });
     }, [camera, side, isOpen, isAnimating, setCameraOverride, isFastTeleport]);
