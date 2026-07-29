@@ -11,7 +11,7 @@ export const TIERS = {
 // Settings for each tier
 const SETTINGS = {
   [TIERS.HIGH]: {
-    dpr: [1, 2], // Allow up to 2x pixel density
+    dpr: [1, 2], // Allow up to 2x pixel density for crisp retina display
     shadows: true, // Enable shadows
     antialias: true,
     powerPreference: "high-performance",
@@ -20,22 +20,22 @@ const SETTINGS = {
     particleCount: 1.0, // 100% particles
   },
   [TIERS.MEDIUM]: {
-    dpr: [1, 1.5], // Cap at 1.5x on mobile to balance quality and GPU fillrate
+    dpr: [1, 2], // Allow up to 2x pixel density for mobile quality
     shadows: false, // Disable shadows for better mobile performance
-    antialias: true,
+    antialias: true, // Enable AA for sharp edges
     powerPreference: "default",
     physicsStep: 1 / 60,
     textureQuality: "medium",
     particleCount: 0.6, // 60% particles
   },
   [TIERS.LOW]: {
-    dpr: [1, 1], // Minimum 1.0x pixel density to maintain crisp resolution
+    dpr: [1, 2], // Allow up to 2x pixel density for sharp text & graphics
     shadows: false, // Disable shadows completely
-    antialias: false, // Disable AA to maximize FPS
-    powerPreference: "low-power",
-    physicsStep: 1 / 45, // Slower physics updates if needed
-    textureQuality: "low",
-    particleCount: 0.3, // 30% particles
+    antialias: true, // Enable AA to eliminate pixelated edges
+    powerPreference: "default",
+    physicsStep: 1 / 60,
+    textureQuality: "medium",
+    particleCount: 0.5, // 50% particles
   },
 };
 

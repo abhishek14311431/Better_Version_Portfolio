@@ -121,17 +121,18 @@ function AppContent() {
                 far: 150
               }}
               gl={{
-                antialias: settings.antialias,
+                antialias: true,
                 alpha: false,
-                powerPreference: settings.powerPreference,
+                powerPreference: "high-performance",
                 localClippingEnabled: true,
                 failIfMajorPerformanceCaveat: false
               }}
-              onCreated={({ gl }) => {
+              onCreated={({ gl, scene }) => {
                 const maxAnisotropy = gl.capabilities.getMaxAnisotropy();
                 gl.outputColorSpace = THREE.SRGBColorSpace;
+                gl.pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
               }}
-              dpr={settings.dpr}
+              dpr={[1, Math.min(typeof window !== 'undefined' ? window.devicePixelRatio : 2, 2)]}
               shadows={settings.shadows}
             >
               <color attach="background" args={['#fdf8e2']} /> {/* TINTED TO DEEP PURPLE */}
