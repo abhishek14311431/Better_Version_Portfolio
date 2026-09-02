@@ -123,7 +123,7 @@ export default function ContactForm() {
             fontWeight: 500
           }}
         >
-          Something went wrong. Please try again or email directly at contact@abhishek.dev
+          Something went wrong. Please try again or email directly at abhishekyadavv4567@gmail.com
         </div>
       )}
 

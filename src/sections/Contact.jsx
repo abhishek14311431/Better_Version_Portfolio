@@ -153,7 +153,7 @@ export default function Contact() {
               </span>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
                 <a
-                  href="mailto:contact@abhishek.dev"
+                  href="mailto:abhishekyadavv4567@gmail.com"
                   style={{
                     fontSize: 'clamp(1.1rem, 2vw, 1.35rem)',
                     color: 'var(--text-primary)',
@@ -163,7 +163,7 @@ export default function Contact() {
                   }}
                   className="contact-email-link"
                 >
-                  contact@abhishek.dev
+                  abhishekyadavv4567@gmail.com
                 </a>
                 <button
                   onClick={handleCopyEmail}

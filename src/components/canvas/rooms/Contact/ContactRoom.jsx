@@ -399,7 +399,7 @@ const ContactRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
                 rotation={[0, 0.2, 0]}
                 texturePath="/textures/contact/beczka.webp"
                 label="GITHUB"
-                onClick={() => window.open('https://github.com', '_blank')}
+                onClick={() => window.open('https://github.com/abhishek14311431', '_blank')}
                 paintOnBeforeCompile={onBeforeCompile}
                 paintUniforms={uniformsData}
             />
@@ -409,17 +409,7 @@ const ContactRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
                 rotation={[0, 0.3, 0]}
                 texturePath="/textures/contact/beczka.webp"
                 label="LINKEDIN"
-                onClick={() => window.open('https://linkedin.com', '_blank')}
-                paintOnBeforeCompile={onBeforeCompile}
-                paintUniforms={uniformsData}
-            />
-            {/* TWITTER */}
-            <SocialBarrel
-                position={isMobile ? [1.2, 0.5, -10] : [3, 0.5, -10]}
-                rotation={[0, -0.2, 0]}
-                texturePath="/textures/contact/beczka.webp"
-                label="TWITTER"
-                onClick={() => window.open('https://twitter.com', '_blank')}
+                onClick={() => window.open('https://www.linkedin.com/in/abhishek-s-yadav1825/', '_blank')}
                 paintOnBeforeCompile={onBeforeCompile}
                 paintUniforms={uniformsData}
             />
@@ -429,7 +419,7 @@ const ContactRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
                 rotation={[0, -0.3, 0]}
                 texturePath="/textures/contact/beczka.webp"
                 label="EMAIL"
-                onClick={() => window.location.href = 'mailto:contact@abhishek.dev'}
+                onClick={() => window.location.href = 'mailto:abhishekyadavv4567@gmail.com'}
                 paintOnBeforeCompile={onBeforeCompile}
                 paintUniforms={uniformsData}
             />
