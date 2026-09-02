@@ -290,12 +290,11 @@ const GalleryRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
                 return `/textures/gallery/${name}_painted.webp`;
             });
 
-            const hasPainted = canHover && projectData.painted && projectData.painted !== projectData.front;
             return {
                 ...projectData,
                 index: i,
                 frontTexture: frontTex,
-                paintedTexture: hasPainted ? paintedTex : null,
+                paintedTexture: canHover && paintedTex ? paintedTex : null,
                 backTexture: backTextureRaw,
                 buttonTexture: overlayTextureRaw,
                 techStack: techStack
