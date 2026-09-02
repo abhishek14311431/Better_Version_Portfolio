@@ -28,7 +28,7 @@ const STORY_MILESTONES = [
     { id: 'intro', position: [0, 0, -15], type: 'intro', title: 'Abhishek', subtitle: '< creative ML engineer • Python • LangChain • FastAPI • React />' },
     { id: 'focus', position: [0, 0, -55], type: 'awards', title: 'CREATION', subtitle: 'AI & ML Engineering • Anomaly Detection • Agentic Workflows' },
     { id: 'journey', position: [0, 0, -95], type: 'journey', title: 'JOURNEY', subtitle: 'Building intelligent AI systems & reliable ML platforms from data to deployment' },
-    { id: 'skills', position: [0, 0, -135], type: 'skills', title: 'SKILLS', subtitle: 'Python • LangChain • FastAPI • Pandas • Scikit-learn • React' },
+    { id: 'skills', position: [0, 0, -135], type: 'skills', title: 'SKILLS', subtitle: 'Python • Pandas • Scikit-learn • LangChain • FastAPI • React' },
 ];
 
 const AboutRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {

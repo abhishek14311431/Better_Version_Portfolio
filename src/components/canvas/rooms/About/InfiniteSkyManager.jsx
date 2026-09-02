@@ -467,10 +467,10 @@ const AWARDS_DATA = {
         layout: 'certificate_grid',
         title: 'Certifications & Achievements',
         items: [
-            { label: 'Oracle Data Platform 2025 — Oracle', date: 'Mar 2026', image: '/textures/about/button.webp', url: '#' },
-            { label: 'AI Foundations Associate — Oracle', date: 'Oct 2025', image: '/textures/about/button.webp', url: '#' },
-            { label: 'Python with DSA — CSE Patashala', date: 'Jul 2025', image: '/textures/about/button.webp', url: '#' },
-            { label: 'Best Performer — Mantha Architects', date: 'Oct 2025', image: '/textures/about/button.webp', url: '#' }
+            { label: 'Oracle Data Platform 2025 — Oracle', date: 'Mar 2026', image: '/textures/about/button.webp', url: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=073B1FF0AAC35989DA09FC2FFF738175AA99814F4C97E68E21B51869E2730453' },
+            { label: 'AI Foundations Associate — Oracle', date: 'Oct 2025', image: '/textures/about/button.webp', url: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=54780D3E5B8F39A9CF7A66503A84CA5A09227260D237F4C8165E385C10CE68B8' },
+            { label: 'Python with DSA — CSE Patashala', date: 'Jul 2025', image: '/textures/about/button.webp', url: 'https://drive.google.com/file/d/1fGqwGTVDj9pod4YpA7kOrJNKZvkKP2Hi/view' },
+            { label: 'Internship Certificate — Mantha Architects', date: 'Sep 2025', image: '/textures/about/button.webp', url: 'https://drive.google.com/file/d/1k23IieZexkiBd10yYdqkZVer2O_Zb1PK/view' }
         ],
         platformConfig: {
             label: 'AWARDS',
@@ -941,13 +941,13 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
                 {/* NAPIS NA WYSPIE (UO) */}
                 <Text
                     position={[0.1, -0.85, 0.1]}
-                    fontSize={0.32}
+                    fontSize={0.42}
                     color="#1a1a1a"
                     anchorX="center"
                     anchorY="middle"
                     font="/fonts/CabinSketch-Bold.ttf"
                 >
-                    AI & ML
+                    CSE
                 </Text>
             </group>
 
@@ -964,13 +964,23 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
                 {/* NAPIS NA WYSPIE (Freelance) */}
                 <Text
                     position={[0, -0.65, 0.1]}
-                    fontSize={0.32}
+                    fontSize={0.28}
                     color="#1a1a1a"
                     anchorX="center"
                     anchorY="middle"
                     font="/fonts/CabinSketch-Bold.ttf"
                 >
-                    MANTHA
+                    INTERNSHIP
+                </Text>
+                <Text
+                    position={[0, -1.05, 0.1]}
+                    fontSize={0.18}
+                    color="#4a4a4a"
+                    anchorX="center"
+                    anchorY="middle"
+                    font="/fonts/CabinSketch-Bold.ttf"
+                >
+                    MANTHA ARCHITECTS
                 </Text>
             </group>
         </group>
@@ -985,21 +995,21 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
 // Balloon configuration: size category, texture path, position offset
 // === EDYTUJ WYSOKOŚĆ TUTAJ (zmień wartość 'y' dla każdego balona) ===
 const BALLOON_CONFIG = [
-    // Large balloons (main skills) - front and center
-    { texture: '/textures/about/reactduzybalon.webp', paintedTexture: '/textures/about/reactduzybalon_painted.webp', label: 'React', size: 'large', x: -2.5, y: 2, z: 0.3, phase: 0 },
-    { texture: '/textures/about/threejsduzybalon.webp', paintedTexture: '/textures/about/threejsduzybalon_painted.webp', label: 'Three.js', size: 'large', x: 2.5, y: 2.5, z: 0.2, phase: 1.5 },
-    { texture: '/textures/about/GSAPduzybalon.webp', paintedTexture: '/textures/about/GSAPduzybalon_painted.webp', label: 'GSAP', size: 'large', x: 0, y: 3, z: 0.5, phase: 3 },
+    // Large balloons (main skills) - front and center - CV: Python, Pandas, Scikit-learn
+    { texture: '/textures/about/reactduzybalon.webp', paintedTexture: '/textures/about/reactduzybalon_painted.webp', label: 'Python', size: 'large', x: -2.5, y: 2, z: 0.3, phase: 0 },
+    { texture: '/textures/about/threejsduzybalon.webp', paintedTexture: '/textures/about/threejsduzybalon_painted.webp', label: 'Pandas', size: 'large', x: 2.5, y: 2.5, z: 0.2, phase: 1.5 },
+    { texture: '/textures/about/GSAPduzybalon.webp', paintedTexture: '/textures/about/GSAPduzybalon_painted.webp', label: 'Scikit-learn', size: 'large', x: 0, y: 3, z: 0.5, phase: 3 },
 
-    // Medium balloons - scattered around
+    // Medium balloons - CV: JavaScript, LangChain.js, LangGraph.js
     { texture: '/textures/about/JSSREDNIBALON.webp', paintedTexture: '/textures/about/JSSREDNIBALON_painted.webp', label: 'JavaScript', size: 'medium', x: -4, y: 1, z: -0.3, phase: 0.8 },
-    { texture: '/textures/about/csssrednibalon.webp', paintedTexture: '/textures/about/csssrednibalon_painted.webp', label: 'CSS', size: 'medium', x: 4, y: 1.5, z: -0.2, phase: 2.2 },
-    { texture: '/textures/about/nextjssrednibalon.webp', paintedTexture: '/textures/about/nextjssrednibalon_painted.webp', label: 'Next.js', size: 'medium', x: 0, y: 0.5, z: -0.4, phase: 4 },
+    { texture: '/textures/about/csssrednibalon.webp', paintedTexture: '/textures/about/csssrednibalon_painted.webp', label: 'LangChain.js', size: 'medium', x: 4, y: 1.5, z: -0.2, phase: 2.2 },
+    { texture: '/textures/about/nextjssrednibalon.webp', paintedTexture: '/textures/about/nextjssrednibalon_painted.webp', label: 'LangGraph.js', size: 'medium', x: 0, y: 0.5, z: -0.4, phase: 4 },
 
-    // Small balloons - background accents
-    { texture: '/textures/about/htmlmalybalon.webp', paintedTexture: '/textures/about/htmlmalybalon_painted.webp', label: 'HTML', size: 'small', x: -5.5, y: 2.5, z: -0.8, phase: 1.2 },
+    // Small balloons - CV: FastAPI, Git, React, MySQL
+    { texture: '/textures/about/htmlmalybalon.webp', paintedTexture: '/textures/about/htmlmalybalon_painted.webp', label: 'FastAPI', size: 'small', x: -5.5, y: 2.5, z: -0.8, phase: 1.2 },
     { texture: '/textures/about/gitmalybalon.webp', paintedTexture: '/textures/about/gitmalybalon_painted.webp', label: 'Git', size: 'small', x: 5.5, y: 3, z: -0.7, phase: 2.8 },
-    { texture: '/textures/about/figmamalybalon.webp', paintedTexture: '/textures/about/figmamalybalon_painted.webp', label: 'Figma', size: 'small', x: -3, y: 4.5, z: -0.5, phase: 3.5 },
-    { texture: '/textures/about/firebasemalybalon.webp', paintedTexture: '/textures/about/firebasemalybalon_painted.webp', label: 'Firebase', size: 'small', x: 3.5, y: 4, z: -0.6, phase: 4.5 },
+    { texture: '/textures/about/figmamalybalon.webp', paintedTexture: '/textures/about/figmamalybalon_painted.webp', label: 'React', size: 'small', x: -3, y: 4.5, z: -0.5, phase: 3.5 },
+    { texture: '/textures/about/firebasemalybalon.webp', paintedTexture: '/textures/about/firebasemalybalon_painted.webp', label: 'MySQL', size: 'small', x: 3.5, y: 4, z: -0.6, phase: 4.5 },
 ];
 
 // Size multipliers for balloon categories
