@@ -33,52 +33,52 @@ export const GALLERY_INTERACTION_AUDIO_SETTINGS = {
     rolloff: 2        // How fast the sound fades away (exponential)
 };
 
-// Define the unique projects and their textures
+// Define the unique projects and their textures — ML portfolio (5 flagship projects) with related images + single-line descriptions
 const FALLBACK_PROJECTS = [
     {
-        id: 'apple-vision-pro',
-        title: 'APPLE VISION PRO EXPERIENCE',
-        front: '/textures/gallery/timberkittyprzod.webp',
-        painted: '/textures/gallery/timberkittyprzod_painted.webp',
-        url: '#project/apple-vision-pro',
-        description: 'A spatial computing web showcase with frame-by-frame 3D canvas interaction, luxury depth glass rendering, and scroll mechanics.',
-        techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/htmllogo.webp', '/textures/gallery/csslogo.webp']
+        id: 'ai-driven-construction-cost-estimation',
+        title: 'AI DRIVEN CONSTRUCTION COST ESTIMATION',
+        front: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80',
+        painted: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80',
+        url: 'https://github.com/abhishek14311431/AI-DRIVEN-CONSTRUCTION-COST-ESTIMATION',
+        description: 'AI platform estimating construction costs across 6 project types with Random Forest valuations and PDF reports via FastAPI + React.',
+        techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/jslogo.webp', '/textures/gallery/phplogo.webp']
     },
     {
-        id: 'bmw-m4-gt3',
-        title: 'BMW M4 GT3 EVO SHOWCASE',
-        front: '/textures/gallery/monetuneprzod.webp',
-        painted: '/textures/gallery/monetuneprzod_painted.webp',
-        url: '#project/bmw-m4-gt3',
-        description: 'An interactive automotive experience featuring 360° image sequence animation, live telemetry HUD displays, and Web Audio synthesis.',
-        techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/jslogo.webp', '/textures/gallery/csslogo.webp']
+        id: 'ai-driven-continuous-behavioral-authentication',
+        title: 'CONTINUOUS BEHAVIORAL AUTHENTICATION',
+        front: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80',
+        painted: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80',
+        url: 'https://github.com/abhishek14311431/AI-Driven-Continuous-Behavioral-Authentication-System',
+        description: 'Zero-trust system verifying cursor and keystroke behavior every 2s with Isolation Forest to lock on impostors with 0% FAR.',
+        techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/jslogo.webp', '/textures/gallery/firebaselogo.webp']
     },
     {
-        id: 'luxury-tailor',
-        title: 'LUXURY TAILOR WEBSITE',
-        front: '/textures/gallery/bioprzod.webp',
-        painted: '/textures/gallery/bioprzod_painted.webp',
-        url: '#project/luxury-tailor',
-        description: 'An elegant editorial web experience for a haute couture tailoring house featuring fluid fabric motion, interactive sizing, and luxury UX.',
-        techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/htmllogo.webp', '/textures/gallery/csslogo.webp']
+        id: 'uniguard-unusual-login-activity-detection',
+        title: 'UNIGUARD LOGIN ANOMALY DETECTION',
+        front: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80',
+        painted: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80',
+        url: 'https://github.com/abhishek14311431/Unusual-Login-Activity-Detection-in-University-IT-Systems',
+        description: 'Unsupervised K-Means & DBSCAN detector scoring unusual university logins with FastAPI + React dashboard and Docker/Jenkins.',
+        techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/tailwindlogo.webp', '/textures/gallery/netlifylogo.webp']
     },
     {
-        id: 'fashion-jewellery-ecommerce',
-        title: 'JEWELLERY ECOMMERCE ENGINE',
-        front: '/textures/gallery/youngmultiprzod.webp',
-        painted: '/textures/gallery/youngmultiprzod_painted.webp',
-        url: '#project/fashion-jewellery-ecommerce',
-        description: 'A full stack luxury jewellery platform built for speed and aesthetics, featuring sub-second edge filtering, real-time cart sync, and cloud media pipelines.',
-        techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/jslogo.webp', '/textures/gallery/csslogo.webp']
+        id: 'ai-investment-research-agent',
+        title: 'AI INVESTMENT RESEARCH AGENT',
+        front: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80',
+        painted: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80',
+        url: 'https://github.com/abhishek14311431/AI-Investment-Research-Agent',
+        description: 'Multi-agent researcher validating companies via Tavily + Gemini then running 5 agents through LangGraph to output INVEST/PASS scores.',
+        techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/jslogo.webp', '/textures/gallery/tailwindlogo.webp']
     },
     {
-        id: 'photography-accessories-platform',
-        title: 'PHOTOGRAPHY ACCESSORIES ENGINE',
-        front: '/textures/gallery/monetuneprzod.webp',
-        painted: '/textures/gallery/monetuneprzod_painted.webp',
-        url: '#project/photography-accessories-platform',
-        description: 'A precision full stack gear platform engineered for professional photographers, featuring camera lens compatibility matrices and dark UI.',
-        techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/jslogo.webp', '/textures/gallery/csslogo.webp']
+        id: 'adaptivemission-ai-rebuilds-when-reality-changes',
+        title: 'ADAPTIVEMISSION — AI REBUILDS WHEN REALITY CHANGES',
+        front: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80',
+        painted: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80',
+        url: 'https://github.com/abhishek14311431/Adaptive_mission--AI-ReBuilds-When-Reality-Changes',
+        description: 'Stateful mission planner understanding natural language and replanning multimodal routes from current location on real events.',
+        techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/tailwindlogo.webp', '/textures/gallery/wordpresslogo.webp']
     }
 ];
 
@@ -290,11 +290,12 @@ const GalleryRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
                 return `/textures/gallery/${name}_painted.webp`;
             });
 
+            const hasPainted = canHover && projectData.painted && projectData.painted !== projectData.front;
             return {
                 ...projectData,
                 index: i,
                 frontTexture: frontTex,
-                paintedTexture: (paintedTex !== frontTex && canHover) ? paintedTex : null,
+                paintedTexture: hasPainted ? paintedTex : null,
                 backTexture: backTextureRaw,
                 buttonTexture: overlayTextureRaw,
                 techStack: techStack
@@ -1171,7 +1172,7 @@ const ProjectCard = memo(forwardRef(({ index, project, clothespinTexture, curren
                     <Text
                         ref={openTextRef}
                         position={[0, 0, 0.01]}
-                        fontSize={0.11}
+                        fontSize={0.09}
                         color={btnHovered ? "#333333" : "#1c1c1c"}
                         font="/fonts/CabinSketch-Bold.ttf"
                         anchorX="center"
@@ -1217,7 +1218,7 @@ const ProjectCard = memo(forwardRef(({ index, project, clothespinTexture, curren
                     <Text
                         ref={detailsTextRef1}
                         position={[0, 0.28, 0.01]} // Względem środka detailsGroupRef, wyżej
-                        fontSize={0.10}
+                        fontSize={0.08}
                         color="#1c1c1c"
                         font="/fonts/CabinSketch-Bold.ttf"
                         anchorX="center"
@@ -1230,7 +1231,7 @@ const ProjectCard = memo(forwardRef(({ index, project, clothespinTexture, curren
                     <Text
                         ref={detailsTextRef2}
                         position={[0, 0.2, 0.01]} // Poniżej nagłówka
-                        fontSize={0.06}
+                        fontSize={0.05}
                         color="#333333"
                         font="/fonts/CabinSketch-Bold.ttf"
                         anchorX="center"
@@ -1253,7 +1254,7 @@ const ProjectCard = memo(forwardRef(({ index, project, clothespinTexture, curren
                     <Text
                         ref={techTextRef}
                         position={[0, 0.15, 0.01]}
-                        fontSize={0.08}
+                        fontSize={0.07}
                         color="#1c1c1c"
                         font="/fonts/CabinSketch-Bold.ttf"
                         anchorX="center"
@@ -1294,11 +1295,16 @@ const ProjectCard = memo(forwardRef(({ index, project, clothespinTexture, curren
                 <Text
                     ref={textRef}
                     position={[0, 0.7, 0]} // Tylko dwa pierwsze parametry [X, Y] mają tutaj znaczenie
-                    fontSize={0.20}
+                    fontSize={0.11}
                     color="#1c1c1c"
                     font="/fonts/CabinSketch-Bold.ttf"
                     anchorX="center"
                     anchorY="middle"
+                    maxWidth={1.25}
+                    lineHeight={1.25}
+                    textAlign="center"
+                    outlineWidth={0.008}
+                    outlineColor="#fdf8e2"
                     fillOpacity={0} // Start hidden
                 >
                     {project.title}

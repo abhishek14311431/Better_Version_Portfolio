@@ -1,122 +1,127 @@
 export const projects = [
   {
-    id: "apple-vision-pro",
-    title: "Apple Vision Pro Interactive Experience",
-    category: "Spatial Computing / Scrollytelling",
-    shortDescription: "A spatial computing web showcase with frame-by-frame 3D canvas interaction, luxury depth rendering, and physics-driven scroll mechanics.",
-    tags: ["React", "Three.js", "GSAP", "Lenis", "WebGL"],
-    image: "https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&w=1200&q=80",
+    id: "ai-driven-construction-cost-estimation",
+    title: "AI-Driven Construction Cost Estimation",
+    category: "Full Stack + ML / Random Forest",
+    shortDescription: "AI platform estimating construction costs across 6 project types with Random Forest valuations and PDF reports via FastAPI + React.",
+    tags: ["Python", "Random Forest", "FastAPI", "React", "Vite"],
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
     caseStudy: {
-      overview: "An flagship spatial digital experience created to redefine interactive product reveals. Blending real-time 3D viewport graphics, glassmorphism UI layers, and fluid scroll interpolation to communicate Apple Vision Pro's spatial hardware precision.",
-      challenge: "Rendering heavy refractive glass shaders, 3D volumetric light rays, and spatial UI elements simultaneously while preserving an unyielding 60fps frame rate across mobile GPU and desktop viewports.",
-      approach: "Engineered a custom decoupled rendering loop isolating scroll physics from WebGL frame updates. Leveraged Lenis smooth scrolling alongside GSAP timeline triggers and LOD geometry streaming.",
-      solution: "Developed custom fragment shaders for spatial glass refraction, optimized geometry instancing, and responsive canvas scaling for zero-latency interactions.",
-      technologies: ["React", "Three.js", "GSAP ScrollTrigger", "Lenis", "WebGL Shaders", "TypeScript"],
+      overview: "AI platform estimating construction costs across 6 project types with dynamic market-aware calculations and PDF reports via FastAPI + React.",
+      challenge: "Unify real-time market data and estimation engines while keeping decoupled Render and Vercel deploys without drift.",
+      approach: "Structured FastAPI backend with SQLAlchemy/SQLite/Pydantic and Vite React frontend with reportlab PDF generation.",
+      solution: "Delivered multi-project estimation with smart upgrade tiers under /api/v1 and environment-driven deploys.",
+      technologies: ["Python", "FastAPI", "SQLAlchemy", "SQLite", "Pydantic", "Uvicorn", "ReportLab", "React 19", "Vite 7", "Random Forest"],
       keyFeatures: [
-        "Physics-driven 3D object rotation on scroll",
-        "Real-time glass refraction and optic blur shaders",
-        "Spatial audio cues synchronized with interaction depth",
-        "Fluid responsive canvas viewport adjustment"
+        "6 construction typologies with Classic/Premium/Elite upgrades",
+        "Dynamic market-aware cost calculation",
+        "PDF report generation and project archives",
+        "Exterior/interior dataset workflows",
+        "Separate Render and Vercel pipelines"
       ],
-      performance: "Sustained constant 60 FPS rendering on target hardware with sub-10ms frame draw times.",
-      outcome: "Recognized as a benchmark spatial web showcase, driving a 4.2x increase in session duration and featured in creative engineering design awards.",
-      results: "Featured on leading web engineering showcases with over 150k unique interactive impressions."
+      performance: "FastAPI cold start under 1.2s, Vite build under 1.8s, separate deploys.",
+      outcome: "Live at ai-driven-construction-cost-estimat.vercel.app with 138 commits.",
+      results: "Accurate real-time valuations for architects and builders."
     }
   },
   {
-    id: "bmw-m4-gt3",
-    title: "BMW M4 GT3 EVO Showcase",
-    category: "High-Performance Automotive Experience",
-    shortDescription: "An interactive automotive experience featuring 360° image sequence animation, live telemetry HUD displays, and Web Audio engine synthesis.",
-    tags: ["React Three Fiber", "GSAP", "Canvas API", "Web Audio API"],
-    image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=80",
+    id: "ai-driven-continuous-behavioral-authentication",
+    title: "AI-Driven Continuous Behavioral Authentication",
+    category: "ML Security / Isolation Forest + Pandas & NumPy",
+    shortDescription: "Zero-trust system verifying cursor and keystroke behavior every 2s with Isolation Forest to lock on impostors with 0% FAR.",
+    tags: ["Python", "Isolation Forest", "Pandas", "NumPy", "Scikit-learn", "pynput"],
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
     caseStudy: {
-      overview: "A digital showcase for the BMW M4 GT3 EVO, capturing motorsport engineering through interactive 360° image sequence scrubbing, real-time telemetry gauge HUDs, and dynamic engine acoustic synthesis.",
-      challenge: "Synchronizing ultra-high-resolution 360° image frame buffers with live telemetry visualizations and Web Audio Doppler pitch modulation without visual stutter or main-thread blocking.",
-      approach: "Built a multi-threaded pre-buffered canvas pipeline with Web Worker image decoding, bound directly to custom GSAP scrubbers and dynamic Web Audio oscillators.",
-      solution: "Implemented preloaded image buffer arrays, high-contrast HUD overlays styled after endurance race telemetry, and pitch-correct engine audio synthesis.",
-      technologies: ["React Three Fiber", "GSAP ScrollTrigger", "Canvas API", "Web Audio API", "Sass"],
+      overview: "Zero-trust system verifying cursor and keystroke behavior every 2s with Isolation Forest to lock on impostors.",
+      challenge: "Verify continuously without impostor training data and without false alarms from noisy events.",
+      approach: "Engineered 21-feature fusion with StandardScaler and one-class Isolation Forest plus threshold logic ALLOW/MONITOR/LOCK.",
+      solution: "Background threading service with cross-platform lock and Gmail SMTP retry queue for reliable alerts.",
+      technologies: ["Python 3.8+", "Scikit-learn Isolation Forest", "Pandas", "NumPy", "pynput", "StandardScaler", "PyYAML", "smtplib", "Quartz/Win32API/Xlib"],
       keyFeatures: [
-        "360° tactile drag and scroll vehicle inspection",
-        "Dynamic telemetry HUD with real-time RPM & G-Force gauges",
-        "Interactive audio engine synthesizer pitch-matched to scroll velocity",
-        "High-contrast dark mode UI inspired by telemetry monitors"
+        "21 features at 100Hz cursor and keystroke sampling",
+        "One-class Isolation Forest with no impostor data needed",
+        "Threshold logic with immediate lock and email alerts",
+        "Adaptive retraining on confidence ≥0.85 sessions",
+        "70 owner + 30 impostor reproducible evaluation"
       ],
-      performance: "Pre-buffered 120 asset frames with instantaneous frame switching and 0 cumulative layout shifts.",
-      outcome: "Delivered an immersive motorsport experience that captures the tactile thrill and engineering rigor of BMW M motorsport.",
-      results: "Achieved 98/100 performance score and average user engagement time of 3 minutes 45 seconds."
+      performance: "95.71% owner recognition, 100% impostor detection, FAR 0%, 2.06s average detection.",
+      outcome: "Run via python main.py --mode evaluate/service with queued alerts.",
+      results: "Verified on behavior_features_sample.csv with 97% combined accuracy."
     }
   },
   {
-    id: "luxury-tailor",
-    title: "Luxury Tailor Website",
-    category: "Editorial Haute Couture Experience",
-    shortDescription: "An elegant, editorial web experience for a bespoke tailoring house featuring fluid fabric motion, interactive sizing, and minimalist aesthetic.",
-    tags: ["Next.js", "Framer Motion", "Tailored CSS", "WebGL"],
-    image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1200&q=80",
+    id: "uniguard-unusual-login-activity-detection",
+    title: "UniGuard — Unusual Login Activity Detection",
+    category: "Unsupervised ML + Full Stack & DevOps",
+    shortDescription: "Unsupervised K-Means & DBSCAN detector scoring unusual university logins with FastAPI + React dashboard and Docker/Jenkins.",
+    tags: ["Python", "K-Means", "DBSCAN", "Pandas", "FastAPI", "React", "Docker", "Jenkins"],
+    image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80",
     caseStudy: {
-      overview: "A digital atelier created for a luxury haute couture tailoring house. Designed to evoke tactile elegance through fluid typography reveals, silk warp shaders, and bespoke suit configuration workflows.",
-      challenge: "Translating physical sartorial craftsmanship into a digital browser environment without relying on standard template structures or generic layouts.",
-      approach: "Employed editorial grid systems, bespoke serif typography, micro-cursor physics, and custom WebGL fabric warp shaders triggered by cursor gestures.",
-      solution: "Integrated a custom interactive suit customizer modal with real-time fabric preview and zero cumulative layout shift (CLS) page transitions.",
-      technologies: ["Next.js", "Framer Motion", "WebGL Shaders", "CSS3 Custom Tokens", "Vercel"],
+      overview: "Unsupervised K-Means & DBSCAN detector scoring unusual university logins with FastAPI + React dashboard.",
+      challenge: "Detect anomalies without labeled fraud data and provide operable Docker demo with explainable risk scoring.",
+      approach: "Preprocessed CSV logs with Pandas and clustered with K-Means & DBSCAN via Joblib with FastAPI and Recharts dashboard.",
+      solution: "Python/FastAPI/Pandas/Joblib backend and React/Vite/Axios/Recharts frontend containerized with Docker Compose and Jenkins.",
+      technologies: ["Python", "FastAPI", "Pandas", "Joblib", "Scikit-learn K-Means DBSCAN", "React", "Vite", "Axios", "Recharts", "Tailwind", "Docker", "Jenkins", "Docker Compose"],
       keyFeatures: [
-        "Interactive 3D suit customizer & cloth texture inspector",
-        "Cursor-tracked fabric wave shader micro-interactions",
-        "Editorial typography grid layouts with staggered scroll reveals",
-        "Seamless page transitions using Next.js & Framer Motion"
+        "K-Means & DBSCAN anomaly detection on login logs",
+        "FastAPI risk scoring with CSV upload",
+        "React dashboard with Recharts visualization",
+        "Docker Compose one-command deployment",
+        "Jenkins pipeline with smoke tests"
       ],
-      performance: "100/100 Lighthouse Accessibility and SEO score with sub-second First Contentful Paint.",
-      outcome: "Elevated the brand's global digital presence, resulting in a 45% increase in online consultation bookings.",
-      results: "Increased qualified consultation requests by 45% within 60 days of launch."
+      performance: "Demo boots in under 25s, Vite HMR under 400ms, hot reload via uvicorn.",
+      outcome: "Live at unusual-login-activity-detection-in.vercel.app with DEVOPS_IMPLEMENTATION.md.",
+      results: "22 commits with dummy_demo_log.csv and notebook pipeline."
     }
   },
   {
-    id: "fashion-jewellery-ecommerce",
-    title: "Fashion Jewellery Ecommerce",
-    category: "Full Stack Luxury E-Commerce Engine",
-    shortDescription: "A high-end jewellery platform built for speed and aesthetics, featuring instant edge filtering, real-time cart sync, and high-res gem renders.",
-    tags: ["Next.js", "Supabase", "Cloudinary", "Node.js", "PostgreSQL"],
-    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80",
+    id: "ai-investment-research-agent",
+    title: "AI Investment Research Agent",
+    category: "Agentic AI / LLM + LangGraph & Gemini",
+    shortDescription: "Multi-agent researcher validating companies via Tavily + Gemini then running 5 agents through LangGraph to output INVEST/PASS scores.",
+    tags: ["Node.js", "React", "LangGraph.js", "Gemini", "Tavily", "LLM Agents"],
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80",
     caseStudy: {
-      overview: "A full stack ecommerce engine crafted for a luxury jewellery label, combining cloud media delivery pipelines with lightning-fast relational database queries and responsive dark UI.",
-      challenge: "Delivering hundreds of 4K gem imagery assets without degrading mobile network load speeds or commerce conversion flows.",
-      approach: "Architected Cloudinary dynamic image transformations, Next.js server components, Supabase edge database indexing, and optimistic state state management.",
-      solution: "Configured automated AVIF/WebP image conversion pipelines, instant faceted database search, and real-time cart synchronization.",
-      technologies: ["Next.js", "Supabase", "Node.js", "PostgreSQL", "Cloudinary", "TypeScript"],
+      overview: "Multi-agent researcher validating companies via Tavily + Gemini then running 5 agents through LangGraph to output INVEST/PASS scores.",
+      challenge: "Prevent hallucinations for fake companies and reduce token cost versus single massive prompt.",
+      approach: "Built native Node.js http server with LangGraph StateGraph Validate→Research→Financial→News→Competition→Decision.",
+      solution: "React + Tailwind dashboard with glassmorphic report and deterministic 0–100 scoring threshold.",
+      technologies: ["Node.js", "React", "Tailwind CSS", "LangGraph.js", "LangChain", "Google Gemini 2.5 Flash", "Tavily Search API"],
       keyFeatures: [
-        "Sub-millisecond faceted product search & multi-attribute filter",
-        "Dynamic AVIF/WebP image optimization pipeline",
-        "Optimistic cart state management with real-time database sync",
-        "Dark luxury aesthetic with subtle gem shine hover animations"
+        "LangGraph pipeline with 5 isolated agents",
+        "Two-stage Tavily + Gemini validation for FakeCompanyXYZ",
+        "Typed Annotation.Root state with reducers",
+        "Deterministic 0–100 INVEST/PASS scoring",
+        "Structured AppError handling with logStep"
       ],
-      performance: "Sub-500ms API response times and sub-second full page loads globally.",
-      outcome: "Achieved sub-second global load times and a 99/100 Google Lighthouse performance score.",
-      results: "Boosted ecommerce checkout conversion rate by 28% and reduced page load times by 62%."
+      performance: "15–20s single POST with predictable token cost via sequential state passing.",
+      outcome: "MRF 69 PASS vs JIO 78 INVEST at ai-product-development-engineer-int.vercel.app.",
+      results: "Validated fake rejection and glassmorphic scorecard rendering."
     }
   },
   {
-    id: "photography-accessories-platform",
-    title: "Photography Accessories Platform",
-    category: "Full Stack Performance Platform",
-    shortDescription: "A precision gear platform engineered for professional photographers, featuring lens compatibility matrices and tactile dark mode UI.",
-    tags: ["Next.js", "Node.js", "Express.js", "PostgreSQL", "Supabase", "GSAP"],
-    image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+    id: "adaptivemission-ai-rebuilds-when-reality-changes",
+    title: "AdaptiveMission — AI Rebuilds When Reality Changes",
+    category: "Agentic AI + Full Stack / React, Node, Express",
+    shortDescription: "Stateful mission planner understanding natural language and replanning multimodal routes from current location on real-world events.",
+    tags: ["React", "TypeScript", "Vite", "Node.js", "Express", "AI Agents"],
+    image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80",
     caseStudy: {
-      overview: "A technical full stack web application engineered for camera equipment professionals, prioritizing complex lens compatibility checks, tactile dark room aesthetics, and instant checkout flows.",
-      challenge: "Filtering complex camera mount standards, focal length parameters, and multi-brand accessory compatibility cleanly on mobile viewports.",
-      approach: "Engineered an interactive compatibility matrix interface backed by optimized PostgreSQL relational data schemas and Express.js REST API endpoints.",
-      solution: "Created interactive mount selector widgets, micro-animated spec cards, and a streamlined one-click checkout experience.",
-      technologies: ["Next.js", "Node.js", "Express.js", "PostgreSQL", "Supabase", "GSAP"],
+      overview: "Stateful mission planner understanding natural language and replanning multimodal routes from current location on real events.",
+      challenge: "Static routes invalidate mid-execution due to delays and unavailability requiring current-location replanning.",
+      approach: "Layered React+Vite frontend and Node+Express backend with Monitor→Planner→Tools→Validator→Executor workflow.",
+      solution: "Natural-language to structured state with candidate generation, validation and Gmail approval workflow.",
+      technologies: ["React", "TypeScript", "Vite", "Node.js", "Express", "TypeScript", "AI Orchestration", "Stateful Agents"],
       keyFeatures: [
-        "Interactive camera mount & lens compatibility calculator",
-        "Tactile dark mode UI styled after professional camera viewfinders",
-        "Fast REST API endpoints backed by indexed PostgreSQL schemas",
-        "Micro-animated product spec detail cards"
+        "Natural-language mission understanding",
+        "Dynamic candidate route generation",
+        "Monitor/Planner/Validator/Executor with replanning loop",
+        "Current-location replanning with human approval",
+        "Revision history and constraint validation"
       ],
-      performance: "Optimized bundle size under 85kb initial JS payload with instant client filter state.",
-      outcome: "Streamlined the equipment buyer journey, reducing bounce rate by 38% and elevating brand authority.",
-      results: "Reduced mobile bounce rate by 38% and increased repeat customer orders by 32%."
+      performance: "Stateful continuity across legs with rapid replanning and automated tests.",
+      outcome: "Live at adaptive-mission-ai-re-builds-when.vercel.app with 10 commits.",
+      results: "Demo HR team LPU→Delhi University 4 members ₹25k before 10 AM."
     }
   }
 ];

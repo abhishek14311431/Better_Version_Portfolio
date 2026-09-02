@@ -8,7 +8,7 @@ const RUBIK_SCRIBBLE_URL = '/fonts/RubikScribble-Regular.ttf';
 const CABIN_SKETCH_URL = '/fonts/CabinSketch-Regular.ttf';
 
 /**
- * HeroText Component - Custom styled for Shan
+ * HeroText Component - Custom styled for Abhishek
  */
 const HeroText = ({ position = [0, 0.3, 0] }) => {
     const groupRef = useRef();
@@ -43,20 +43,25 @@ const HeroText = ({ position = [0, 0.3, 0] }) => {
     const floatY = useRef(0);
     const worldPosVec = useRef(new THREE.Vector3());
 
-    // Letter positions for SHAN split effect (4 letters)
+    // Letter positions for Abhishek split effect (8 letters) - spacing 0.40
     const letters = useMemo(() => [
-        { char: 'S', baseX: -0.9, splitDir: -1.8 },
-        { char: 'H', baseX: -0.3, splitDir: -0.6 },
-        { char: 'A', baseX: 0.3, splitDir: 0.6 },
-        { char: 'N', baseX: 0.9, splitDir: 1.8 },
+        { char: 'A', baseX: -1.40, splitDir: -2.80 },
+        { char: 'B', baseX: -1.00, splitDir: -2.00 },
+        { char: 'H', baseX: -0.60, splitDir: -1.20 },
+        { char: 'I', baseX: -0.20, splitDir: -0.40 },
+        { char: 'S', baseX: 0.20, splitDir: 0.40 },
+        { char: 'H', baseX: 0.60, splitDir: 1.20 },
+        { char: 'E', baseX: 1.00, splitDir: 2.00 },
+        { char: 'K', baseX: 1.40, splitDir: 2.80 },
     ], []);
 
     // Tagline words for split effect
     const taglineWords = useMemo(() => [
         { text: 'Creative', baseX: -1.3, splitDir: -1.8 },
-        { text: 'Full Stack', baseX: -0.4, splitDir: -0.6 },
+        { text: 'ML Engineer', baseX: -0.4, splitDir: -0.6 },
         { text: 'Developer', baseX: 0.4, splitDir: 0.6 },
         { text: 'Interactive', baseX: 1.3, splitDir: 1.8 },
+        { text: 'Passionate', baseX: 2.1, splitDir: 2.4 },
     ], []);
 
     // Animation loop
@@ -86,7 +91,7 @@ const HeroText = ({ position = [0, 0.3, 0] }) => {
 
         splitAmount.current = THREE.MathUtils.lerp(splitAmount.current, targetSplit.current, 0.08);
 
-        // Apply split to each letter of SHAN
+        // Apply split to each letter of Abhishek
         letterRefs.current.forEach((ref, i) => {
             if (ref) {
                 if (ref.material) ref.material.opacity = 1;
@@ -117,20 +122,20 @@ const HeroText = ({ position = [0, 0.3, 0] }) => {
 
     return (
         <group ref={groupRef} position={position} scale={[scale, scale, 1]}>
-            {/* SHAN Letters */}
+            {/* Abhishek Letters */}
             {letters.map((letter, i) => (
                 <Text
                     key={`${letter.char}-${i}`}
                     ref={(el) => (letterRefs.current[i] = el)}
                     position={[letter.baseX, 0.35, 0]}
-                    fontSize={0.85}
+                    fontSize={0.52}
                     font={RUBIK_SCRIBBLE_URL}
                     color="#1a1a1a"
-                    outlineWidth={0.014}
+                    outlineWidth={0.012}
                     outlineColor="#1a1a1a"
                     anchorX="center"
                     anchorY="middle"
-                    letterSpacing={0}
+                    letterSpacing={0.03}
                 >
                     {letter.char}
                 </Text>

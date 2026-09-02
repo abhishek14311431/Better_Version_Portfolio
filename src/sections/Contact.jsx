@@ -45,7 +45,7 @@ export default function Contact() {
   }, []);
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText('contact@shan.dev');
+    navigator.clipboard.writeText('abhishekyadavv4567@gmail.com');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -153,7 +153,7 @@ export default function Contact() {
               </span>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
                 <a
-                  href="mailto:contact@shan.dev"
+                  href="mailto:contact@abhishek.dev"
                   style={{
                     fontSize: 'clamp(1.1rem, 2vw, 1.35rem)',
                     color: 'var(--text-primary)',
@@ -163,7 +163,7 @@ export default function Contact() {
                   }}
                   className="contact-email-link"
                 >
-                  contact@shan.dev
+                  contact@abhishek.dev
                 </a>
                 <button
                   onClick={handleCopyEmail}
@@ -202,7 +202,7 @@ export default function Contact() {
                 </span>
                 <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                   <a
-                    href="https://github.com"
+                    href="https://github.com/abhishek14311431"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}
@@ -212,7 +212,7 @@ export default function Contact() {
                     GitHub
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/abhishek-s-yadav1825/"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}
@@ -220,16 +220,6 @@ export default function Contact() {
                     aria-label="LinkedIn Profile"
                   >
                     LinkedIn
-                  </a>
-                  <a
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}
-                    className="contact-item-hover"
-                    aria-label="Twitter Profile"
-                  >
-                    Twitter / X
                   </a>
                 </div>
               </div>

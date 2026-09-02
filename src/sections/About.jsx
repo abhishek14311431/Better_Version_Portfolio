@@ -144,7 +144,7 @@ export default function About() {
                 marginBottom: '16px'
               }}
             >
-              ABOUT SHAN // CREATIVE FULL STACK DEVELOPER
+              ABOUT Abhishek // CREATIVE FULL STACK DEVELOPER
             </p>
 
             {/* 2. Large heading */}
@@ -170,7 +170,7 @@ export default function About() {
                 fontWeight: 300
               }}
             >
-              I am Shan, a Creative Full Stack Developer based in India. I specialize in building immersive digital experiences rather than ordinary websites—combining visual storytelling, 3D WebGL viewports, and resilient backend architecture into unified web applications.
+              I am Abhishek, a Creative Full Stack Developer based in India. I specialize in building immersive digital experiences rather than ordinary websites—combining visual storytelling, 3D WebGL viewports, and resilient backend architecture into unified web applications.
             </p>
             <p
               style={{

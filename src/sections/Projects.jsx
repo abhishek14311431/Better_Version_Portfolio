@@ -103,7 +103,7 @@ export default function Projects() {
               fontWeight: 300
             }}
           >
-            A curated portfolio of spatial product reveals, high-performance automotive platforms, editorial luxury experiences, and full stack ecommerce engines.
+            A curated portfolio of AI-driven construction estimation, behavioral biometrics, unsupervised login anomaly detection, agentic investment research and adaptive mission planning.
           </p>
         </div>
 

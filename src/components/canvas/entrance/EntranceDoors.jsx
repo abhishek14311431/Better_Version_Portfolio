@@ -627,9 +627,9 @@ const EntranceDoors = ({
             {/* === CAPABILITY SIGN BANNERS ABOVE GATE === */}
             {[
                 { text: "Creative Dev", x: -1.8 },
-                { text: "Frontend Eng", x: -0.6 },
-                { text: "Full Stack", x: 0.6 },
-                { text: "3D & Motion", x: 1.8 }
+                { text: "Python", x: -0.6 },
+                { text: "LLM", x: 0.6 },
+                { text: "ML Engineer", x: 1.8 }
             ].map((banner, index) => (
                 <group key={index} position={[banner.x, frameCenterY + 1.65, 0.2]}>
                     {/* Shadow / Border plane */}
@@ -688,7 +688,7 @@ const EntranceDoors = ({
                         anchorY="middle"
                         font="/fonts/CabinSketch-Bold.ttf"
                     >
-                        Full Stack 🚀
+                        Python 🐍
                     </Text>
                 </group>
 
@@ -709,7 +709,7 @@ const EntranceDoors = ({
                         anchorY="middle"
                         font="/fonts/CabinSketch-Bold.ttf"
                     >
-                        @shan.dev
+                        @abhishek.dev
                     </Text>
                 </group>
 
@@ -806,13 +806,13 @@ const EntranceDoors = ({
                     </mesh>
                     <Text
                         position={[0, 0.02, 0.001]}
-                        fontSize={0.075}
+                        fontSize={0.07}
                         color="#311059"
                         anchorX="center"
                         anchorY="middle"
                         font="/fonts/CabinSketch-Bold.ttf"
                     >
-                        Blogging ✍️
+                        Random Forest 🌲
                     </Text>
                 </group>
 
@@ -827,13 +827,13 @@ const EntranceDoors = ({
                     </mesh>
                     <Text
                         position={[0, 0.02, 0.001]}
-                        fontSize={0.07}
+                        fontSize={0.072}
                         color="#311059"
                         anchorX="center"
                         anchorY="middle"
                         font="/fonts/CabinSketch-Bold.ttf"
                     >
-                        Web Dev 💻
+                        React.js ⚛️
                     </Text>
                 </group>
 
