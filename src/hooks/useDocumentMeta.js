@@ -8,13 +8,13 @@ import { useScene } from '../context/SceneContext';
 const ROOM_META = {
     null: {
         path: '/',
-        title: 'Abhishek — Creative Full Stack Developer & Interactive Web Engineer',
-        description: 'Portfolio of Abhishek, Creative Full Stack Developer specializing in immersive digital experiences, scrollytelling, 3D web experiences, motion design, and scalable full stack architecture.',
+        title: 'Abhishek — Creative ML Engineer & AI Systems Builder',
+        description: 'Portfolio of Abhishek, Creative ML Engineer specializing in Python, Isolation Forest, Random Forest, LangChain/LangGraph, FastAPI and React for reliable AI products.',
     },
     about: {
         path: '/about',
         title: 'About — Abhishek Portfolio',
-        description: 'Learn about Abhishek — a Creative Full Stack Developer bridging design and development to build immersive digital experiences inspired by Apple, Stripe, and Linear.',
+        description: 'Learn about Abhishek — a Creative ML Engineer bridging data, models and product to build reliable AI systems inspired by real-world evaluation.',
     },
     gallery: {
         path: '/gallery',

@@ -419,10 +419,10 @@ const AWARDS_DATA = {
         layout: 'certificate_grid',
         title: 'Core Capabilities & Technical Stack',
         items: [
-            { label: 'Full Stack Engineering (React / Next.js / Node)', date: 'Active', image: '/textures/about/button.webp', url: '#' },
-            { label: '3D Canvas & WebGL Experiences (Three.js)', date: 'Active', image: '/textures/about/button.webp', url: '#' },
-            { label: 'High-Performance Motion (GSAP / Framer)', date: 'Active', image: '/textures/about/button.webp', url: '#' },
-            { label: 'Database & Cloud Architecture (Supabase / Postgres)', date: 'Active', image: '/textures/about/button.webp', url: '#' },
+            { label: 'AI & ML (LangChain.js / LangGraph.js / Anomaly Detection)', date: 'Active', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Programming (Python / JavaScript)', date: 'Active', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Libraries / Frameworks (FastAPI, Flask, React, Scikit-learn, Pandas)', date: 'Active', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Databases & Tools (MySQL / SQLite / Vercel / Render)', date: 'Active', image: '/textures/about/button.webp', url: '#' },
         ],
         platformConfig: {
             label: 'EXPERTISE',
@@ -433,31 +433,31 @@ const AWARDS_DATA = {
     sotd: {
         id: 'award-sotd',
         layout: 'certificate_grid',
-        title: 'Frontend & Creative Engineering',
+        title: 'AI & ML Engineering',
         items: [
-            { label: 'React & Next.js Web Engineering', date: '2026', image: '/textures/about/button.webp', url: '#' },
-            { label: '3D WebGL Shaders & Canvas Interactions', date: '2026', image: '/textures/about/button.webp', url: '#' },
-            { label: 'GSAP Scrollytelling & Frame Sequences', date: '2025', image: '/textures/about/button.webp', url: '#' },
-            { label: 'Responsive Mobile-First Interfaces', date: 'Active', image: '/textures/about/button.webp', url: '#' }
+            { label: 'Regression, Classification & Model Evaluation', date: '2026', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Isolation Forest, K-Means, DBSCAN, Random Forest', date: '2026', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Behavioral Biometrics — 92–94% Accuracy', date: '2026', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Explainable AI & PDF Report Generation', date: 'Active', image: '/textures/about/button.webp', url: '#' }
         ],
         platformConfig: {
-            label: 'DEVELOPER',
+            label: 'ML ENGINEER',
             color: '#00D9FF',
-            icon: '💻'
+            icon: '🤖'
         }
     },
     sotm: {
         id: 'award-sotm',
         layout: 'certificate_grid',
-        title: 'Full Stack & Cloud Architecture',
+        title: 'Full Stack for AI Products',
         items: [
-            { label: 'Node.js & Express REST Infrastructure', date: '2026', image: '/textures/about/button.webp', url: '#' },
-            { label: 'Supabase & PostgreSQL Data Modeling', date: '2025', image: '/textures/about/button.webp', url: '#' },
-            { label: 'Cloud Media & Asset Optimization', date: '2026', image: '/textures/about/button.webp', url: '#' },
-            { label: 'Core Vitals & Sub-Second Hydration', date: 'Active', image: '/textures/about/button.webp', url: '#' }
+            { label: 'FastAPI & Flask REST APIs', date: '2026', image: '/textures/about/button.webp', url: '#' },
+            { label: 'React, Streamlit, Matplotlib UIs', date: '2025', image: '/textures/about/button.webp', url: '#' },
+            { label: 'MySQL / SQLite Data Modeling', date: '2026', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Vercel & Render Deployment', date: 'Active', image: '/textures/about/button.webp', url: '#' }
         ],
         platformConfig: {
-            label: 'FULL STACK',
+            label: 'PRODUCT',
             color: '#00D9FF',
             icon: '⚡'
         }
@@ -465,16 +465,17 @@ const AWARDS_DATA = {
     other: {
         id: 'award-other',
         layout: 'certificate_grid',
-        title: 'Creative Engineering & UI Design',
+        title: 'Certifications & Achievements',
         items: [
-            { label: 'Interactive Storytelling & Physics', date: '2026', image: '/textures/about/button.webp', url: '#' },
-            { label: 'Awwwards-Level Design Systems', date: '2025', image: '/textures/about/button.webp', url: '#' },
-            { label: 'Fluid Motion & Tactile Interactions', date: '2026', image: '/textures/about/button.webp', url: '#' }
+            { label: 'Oracle Data Platform 2025 — Oracle', date: 'Mar 2026', image: '/textures/about/button.webp', url: '#' },
+            { label: 'AI Foundations Associate — Oracle', date: 'Oct 2025', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Python with DSA — CSE Patashala', date: 'Jul 2025', image: '/textures/about/button.webp', url: '#' },
+            { label: 'Best Performer — Mantha Architects', date: 'Oct 2025', image: '/textures/about/button.webp', url: '#' }
         ],
         platformConfig: {
-            label: 'CREATIVE',
+            label: 'AWARDS',
             color: '#00D9FF',
-            icon: '🎨'
+            icon: '🏆'
         }
     }
 };
@@ -918,13 +919,13 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
             {/* Subtitle */}
             <Text
                 position={[0, 4.2, 0.3]}
-                fontSize={0.35}
+                fontSize={0.32}
                 color="#4a4a4a"
                 anchorX="center"
                 anchorY="middle"
                 font="/fonts/CabinSketch-Regular.ttf"
             >
-                Full Stack & Creative Engineering Roadmap
+                AI & ML Engineering Roadmap — LPU to Mantha
             </Text>
 
             {/* === UO ISLAND (Left) === */}
@@ -940,13 +941,13 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
                 {/* NAPIS NA WYSPIE (UO) */}
                 <Text
                     position={[0.1, -0.85, 0.1]}
-                    fontSize={0.38}
+                    fontSize={0.32}
                     color="#1a1a1a"
                     anchorX="center"
                     anchorY="middle"
                     font="/fonts/CabinSketch-Bold.ttf"
                 >
-                    FULL STACK
+                    AI & ML
                 </Text>
             </group>
 
@@ -963,13 +964,13 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
                 {/* NAPIS NA WYSPIE (Freelance) */}
                 <Text
                     position={[0, -0.65, 0.1]}
-                    fontSize={0.42}
+                    fontSize={0.32}
                     color="#1a1a1a"
                     anchorX="center"
                     anchorY="middle"
                     font="/fonts/CabinSketch-Bold.ttf"
                 >
-                    CREATIVE DEV
+                    MANTHA
                 </Text>
             </group>
         </group>

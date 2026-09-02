@@ -6,37 +6,37 @@ gsap.registerPlugin(ScrollTrigger);
 
 const highlightCards = [
   {
-    title: "Creative Development",
-    desc: "Blending real-time WebGL, GSAP physics, and custom canvas shaders to build bespoke, memorable digital worlds."
+    title: "AI & ML Engineering",
+    desc: "LangChain.js, LangGraph.js, Regression, Classification, Model Evaluation and Anomaly Detection with Isolation Forest, K-Means, DBSCAN and Random Forest."
   },
   {
-    title: "Full Stack Engineering",
-    desc: "Architecting robust backend services, Supabase & PostgreSQL database models, and scalable Node.js cloud APIs."
+    title: "Programming",
+    desc: "Python and JavaScript for scalable AI systems, data pipelines and interactive web products."
   },
   {
-    title: "Interactive Experiences",
-    desc: "Designing tactile micro-interactions, responsive 3D viewports, and scrollytelling mechanics that captivate users."
+    title: "Libraries & Frameworks",
+    desc: "FastAPI, Flask, React, Scikit-learn, NumPy, Pandas, Matplotlib and Streamlit for end-to-end ML workflows."
   },
   {
-    title: "Performance First",
-    desc: "Optimizing Core Web Vitals to sustain smooth 60FPS canvas animations and instantaneous edge hydration."
+    title: "Databases & Tools",
+    desc: "MySQL, SQLite, Git/GitHub, VS Code, Vercel and Render for storage, version control and deployment."
   },
   {
-    title: "Modern Technologies",
-    desc: "Leveraging React, Next.js, TypeScript, Three.js, and modern cloud architecture for enduring technical quality."
+    title: "Hybrid AI Cost Intelligence",
+    desc: "Built rule-based + Random Forest system at Mantha Architects automating cost calculations and site expenditure tracking."
   },
   {
-    title: "User-Centered Design",
-    desc: "Translating complex product requirements into clean, accessible, and human-centric visual interfaces."
+    title: "Behavioral Biometrics",
+    desc: "Engineered 100Hz multi-threaded Isolation Forest pipeline with 92–94% owner accuracy and real-time email alerts."
   }
 ];
 
 const stats = [
-  { value: "15+", label: "Projects Completed" },
-  { value: "18+", label: "Technologies Used" },
-  { value: "25+", label: "Interactive Experiences Built" },
-  { value: "1,500+", label: "GitHub Contributions" },
-  { value: "5+", label: "Years of Dedicated Learning" }
+  { value: "7.21", label: "CGPA — B.Tech AI & ML, LPU" },
+  { value: "89.4%", label: "12th — Expert PU College" },
+  { value: "83.8%", label: "10th — Jain Public School" },
+  { value: "60+", label: "Hours Hands-on AI/ML" },
+  { value: "5", label: "Flagship AI Projects" }
 ];
 
 export default function About() {
@@ -144,7 +144,7 @@ export default function About() {
                 marginBottom: '16px'
               }}
             >
-              ABOUT Abhishek // CREATIVE FULL STACK DEVELOPER
+              ABOUT Abhishek S // CREATIVE ML ENGINEER
             </p>
 
             {/* 2. Large heading */}
@@ -156,8 +156,8 @@ export default function About() {
                 marginBottom: '28px'
               }}
             >
-              Building Immersive Digital Experiences.<br />
-              <span className="text-gradient-purple">Where Design, Motion, and Engineering Become One.</span>
+              Building Intelligent AI Systems.<br />
+              <span className="text-gradient-purple">Where Data, Models, and Real-World Impact Become One.</span>
             </h2>
 
             {/* 3. Premium Paragraphs */}
@@ -170,7 +170,7 @@ export default function About() {
                 fontWeight: 300
               }}
             >
-              I am Abhishek, a Creative Full Stack Developer based in India. I specialize in building immersive digital experiences rather than ordinary websites—combining visual storytelling, 3D WebGL viewports, and resilient backend architecture into unified web applications.
+              I am Abhishek S, a B.Tech AI & ML student at Lovely Professional University (CGPA 7.21) and Creative ML Engineer based in India. I build intelligent systems that turn raw interaction data into reliable decisions — from Random Forest cost estimation to Isolation Forest behavioral authentication.
             </p>
             <p
               style={{
@@ -181,7 +181,7 @@ export default function About() {
                 fontWeight: 300
               }}
             >
-              Drawing inspiration from Apple, Stripe, Linear, Framer, and Awwwards-winning standards, I write clean, intentional code engineered for fluidity and speed. From interactive canvas scenes to high-concurrency cloud APIs, every layer of my work is focused on precision and technical excellence.
+              My stack spans Python, JavaScript, LangChain.js/LangGraph.js, FastAPI, Flask, React, Scikit-learn, NumPy, Pandas, Matplotlib and Streamlit, backed by MySQL/SQLite and deployed on Vercel/Render. At Mantha Architects (Jun–Sep 2025) I engineered a hybrid rule-based + Random Forest cost system automating interior/exterior/structural workflows as Site Engineer Intern.
             </p>
             <p
               style={{
@@ -192,7 +192,7 @@ export default function About() {
                 fontWeight: 300
               }}
             >
-              I bridge the gap between creative design and complex full stack engineering—ensuring interfaces feel alive, responsive, and uncompromisingly fast on every device.
+              With 60+ hours of hands-on AI/ML, Oracle Data Platform & AI Foundations certifications, and flagship projects like behavioral biometrics (92–94% accuracy, 4–5% FRR), I bridge model research and product engineering with ownership, debugging and cross-functional collaboration.
             </p>
 
             {/* 4. Personal Mission Statement */}
@@ -374,7 +374,7 @@ export default function About() {
         >
           {/* Skills Summary Tag */}
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px' }}>
-            {['Full Stack Development', 'Creative Development', 'Interactive UI', 'Scrollytelling', '3D Web Experiences', 'Motion Design', 'Premium UI', 'Performance Optimization', 'Modern Web Architecture'].map(skill => (
+            {['Python', 'JavaScript', 'LangChain.js', 'LangGraph.js', 'Regression', 'Classification', 'Anomaly Detection', 'Scikit-learn', 'NumPy', 'Pandas', 'FastAPI', 'Flask', 'React', 'MySQL', 'SQLite'].map(skill => (
               <span
                 key={skill}
                 style={{
@@ -403,7 +403,7 @@ export default function About() {
               letterSpacing: '0.5px'
             }}
           >
-            "I don't just build for the web — I shape how digital interactions feel."
+            "I don't just train models — I turn them into reliable products users trust."
           </p>
         </div>
       </div>

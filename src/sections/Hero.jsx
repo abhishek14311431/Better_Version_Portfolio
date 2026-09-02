@@ -133,7 +133,7 @@ export default function Hero({ isLoaded }) {
                 margin: '0 0 24px'
               }}
             >
-              Creative Full Stack Developer
+              Creative ML Engineer
             </p>
 
             {/* Headline */}
@@ -149,7 +149,7 @@ export default function Hero({ isLoaded }) {
               }}
               className="text-gradient"
             >
-              Building Digital Experiences Beyond Ordinary.
+              Building Intelligent AI Systems Beyond Data.
             </h1>
 
             {/* Subheading */}
@@ -163,7 +163,7 @@ export default function Hero({ isLoaded }) {
                 fontWeight: 300
               }}
             >
-              I design and engineer immersive web experiences using modern frontend technologies, scalable backend architecture, motion design, and creative storytelling.
+              I engineer AI systems using Python, LangChain.js, FastAPI, React, Pandas and NumPy — turning behavioral signals, cost models and live research into reliable, explainable products.
             </p>
 
             {/* Action CTAs */}
