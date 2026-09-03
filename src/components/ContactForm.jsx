@@ -33,7 +33,7 @@ export default function ContactForm() {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
     
@@ -44,22 +44,43 @@ export default function ContactForm() {
 
     setStatus('loading');
     
-    // Simulate contact form submission
-    setTimeout(() => {
-      const isSuccess = Math.random() > 0.05; // 95% success rate
-      if (isSuccess) {
-        setStatus('success');
-        setFormData({
-          name: '',
-          email: '',
-          projectType: 'Immersive Product Experience / 3D Web',
-          budget: '$5k - $15k',
-          message: ''
+    const web3Key = import.meta.env.VITE_WEB3FORMS_KEY;
+    try {
+      if (web3Key) {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            access_key: web3Key,
+            to: 'abhishekyadavv4567@gmail.com',
+            from_name: formData.name,
+            from_email: formData.email,
+            subject: `Portfolio Inquiry: ${formData.projectType} (${formData.budget}) from ${formData.name}`,
+            message: `Name: ${formData.name}\nEmail: ${formData.email}\nProject: ${formData.projectType}\nBudget: ${formData.budget}\n\n${formData.message}`,
+            reply_to: formData.email
+          })
         });
+        const data = await res.json();
+        if (data.success) {
+          setStatus('success');
+          setFormData({ name: '', email: '', projectType: 'Immersive Product Experience / 3D Web', budget: '$5k - $15k', message: '' });
+        } else {
+          throw new Error(data.message || 'Web3Forms failed');
+        }
       } else {
-        setStatus('error');
+        // Fallback: open mailto with prefilled content (works without backend)
+        const subject = encodeURIComponent(`Portfolio Inquiry: ${formData.projectType} (${formData.budget}) from ${formData.name}`);
+        const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nProject: ${formData.projectType}\nBudget: ${formData.budget}\n\nMessage:\n${formData.message}`);
+        window.location.href = `mailto:abhishekyadavv4567@gmail.com?subject=${subject}&body=${body}`;
+        // Copy details as backup
+        try { await navigator.clipboard.writeText(`To: abhishekyadavv4567@gmail.com\nSubject: ${decodeURIComponent(subject)}\n\n${decodeURIComponent(body)}`); } catch {}
+        setStatus('success');
+        setFormData({ name: '', email: '', projectType: 'Immersive Product Experience / 3D Web', budget: '$5k - $15k', message: '' });
       }
-    }, 1800);
+    } catch (err) {
+      console.error('Contact form error:', err);
+      setStatus('error');
+    }
   };
 
   return (
@@ -123,7 +144,7 @@ export default function ContactForm() {
             fontWeight: 500
           }}
         >
-          Something went wrong. Please try again or email directly at abhishekyadavv4567@gmail.com
+          Something went wrong. Please try again or email directly at <a href="mailto:abhishekyadavv4567@gmail.com" style={{ color: 'var(--error)', textDecoration: 'underline' }}>abhishekyadavv4567@gmail.com</a>
         </div>
       )}
 
