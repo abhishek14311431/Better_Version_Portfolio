@@ -962,7 +962,7 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
                 AI & ML Engineering Roadmap — LPU to Mantha
             </Text>
 
-            {/* === UO ISLAND (Left) === */}
+            {/* === UO ISLAND (Left) — CSE === */}
             <group ref={uoRef} position={[-3.5, -1, 0]}>
                 <mesh>
                     <planeGeometry args={[islandHeight * uoAspect, islandHeight]} />
@@ -972,10 +972,25 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
                         side={THREE.DoubleSide}
                     />
                 </mesh>
-                {/* NAPIS NA WYSPIE (UO) */}
+                {/* Cover baked "UO" large text */}
+                <mesh position={[0, 0.95, 0.02]}>
+                    <planeGeometry args={[1.9, 0.95]} />
+                    <meshBasicMaterial color="#fdf8e2" transparent opacity={1} depthWrite={false} />
+                </mesh>
+                <Text
+                    position={[0, 0.95, 0.03]}
+                    fontSize={0.62}
+                    color="#1a1a1a"
+                    anchorX="center"
+                    anchorY="middle"
+                    font="/fonts/CabinSketch-Bold.ttf"
+                >
+                    CSE
+                </Text>
+                {/* Small sign — keep visible */}
                 <Text
                     position={[0.1, -0.85, 0.1]}
-                    fontSize={0.42}
+                    fontSize={0.32}
                     color="#1a1a1a"
                     anchorX="center"
                     anchorY="middle"
@@ -985,7 +1000,7 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
                 </Text>
             </group>
 
-            {/* === FREELANCE ISLAND (Right) === */}
+            {/* === FREELANCE ISLAND (Right) — INTERNSHIP === */}
             <group ref={freelanceRef} position={[3.5, -2, 0.5]}>
                 <mesh>
                     <planeGeometry args={[islandHeight * freelanceAspect, islandHeight]} />
@@ -995,10 +1010,25 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
                         side={THREE.DoubleSide}
                     />
                 </mesh>
-                {/* NAPIS NA WYSPIE (Freelance) */}
+                {/* Cover baked "FREELANCE" large text */}
+                <mesh position={[0, 0.95, 0.02]}>
+                    <planeGeometry args={[2.9, 0.95]} />
+                    <meshBasicMaterial color="#fdf8e2" transparent opacity={1} depthWrite={false} />
+                </mesh>
                 <Text
-                    position={[0, -0.65, 0.1]}
-                    fontSize={0.28}
+                    position={[0, 0.95, 0.03]}
+                    fontSize={0.48}
+                    color="#1a1a1a"
+                    anchorX="center"
+                    anchorY="middle"
+                    font="/fonts/CabinSketch-Bold.ttf"
+                >
+                    INTERNSHIP
+                </Text>
+                {/* Small sign — fit both lines inside white box */}
+                <Text
+                    position={[0, -0.58, 0.1]}
+                    fontSize={0.22}
                     color="#1a1a1a"
                     anchorX="center"
                     anchorY="middle"
@@ -1007,8 +1037,8 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
                     INTERNSHIP
                 </Text>
                 <Text
-                    position={[0, -1.05, 0.1]}
-                    fontSize={0.18}
+                    position={[0, -0.82, 0.1]}
+                    fontSize={0.14}
                     color="#4a4a4a"
                     anchorX="center"
                     anchorY="middle"
