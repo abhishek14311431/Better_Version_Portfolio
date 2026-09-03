@@ -616,10 +616,10 @@ const AwardsMilestone = ({ z, scrollProgressRef }) => {
         const spreadX = 5;
 
         if (sotdRef.current) {
-            sotdRef.current.position.x = -revealFactor * spreadX;
+            sotdRef.current.position.x = -2.8 - revealFactor * 2.2;
         }
         if (sotmRef.current) {
-            sotmRef.current.position.x = revealFactor * spreadX;
+            sotmRef.current.position.x = 2.8 + revealFactor * 2.2;
         }
 
         if (sotyRef.current) {
@@ -642,7 +642,7 @@ const AwardsMilestone = ({ z, scrollProgressRef }) => {
             </Text>
 
             {/* === SOTD (behind SOTY, rendered second) === */}
-            <group ref={sotdRef} position={[0, 0.5, -0.5]}>
+            <group ref={sotdRef} position={[-2.8, 0.5, -0.5]}>
                 {/* Painted card (behind) - hidden until button hover */}
                 <mesh ref={sotdCardPaintedRef} position={[0, 0, -0.001]} visible={true}>
                     <planeGeometry args={[cardHeight * cardLegacyAspect, cardHeight]} />
@@ -705,7 +705,7 @@ const AwardsMilestone = ({ z, scrollProgressRef }) => {
             </group>
 
             {/* === SOTM (behind SOTY, rendered third) === */}
-            <group ref={sotmRef} position={[0, 0.5, -0.2]}>
+            <group ref={sotmRef} position={[2.8, 0.5, -0.2]}>
                 {/* Painted card (behind) - hidden until button hover */}
                 <mesh ref={sotmCardPaintedRef} position={[0, 0, -0.001]} visible={true}>
                     <planeGeometry args={[cardHeight * cardLegacyAspect, cardHeight]} />
@@ -830,7 +830,7 @@ const AwardsMilestone = ({ z, scrollProgressRef }) => {
             </group>
 
             {/* === INTERNSHIP CERTIFICATE (4th card — front lower) === */}
-            <group ref={internshipRef} position={[0, -1.2, 0.2]}>
+            <group ref={internshipRef} position={[0, -2.6, 0.3]}>
                 <mesh ref={internshipCardPaintedRef} position={[0, 0, -0.001]} visible={true}>
                     <planeGeometry args={[cardHeight * cardLegacyAspect, cardHeight]} />
                     <meshBasicMaterial color="#fcf3c6" map={sotyPaintedTexture} transparent opacity={0} side={THREE.DoubleSide} alphaTest={0.5} />
