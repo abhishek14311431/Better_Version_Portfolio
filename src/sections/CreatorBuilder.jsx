@@ -7,23 +7,23 @@ gsap.registerPlugin(ScrollTrigger);
 const pillars = [
   {
     num: "01",
-    title: "Immersive Experiences",
-    desc: "Blending storytelling, animation, 3D graphics, and motion design to craft memorable web applications inspired by Apple, Stripe, Linear, and Awwwards leaders."
+    title: "AI Systems Engineering",
+    desc: "Building intelligent systems with Python, LangChain.js, LangGraph.js, FastAPI and React — turning behavioral signals and cost models into reliable products."
   },
   {
     num: "02",
-    title: "Full Stack Architecture",
-    desc: "Engineering scalable backend APIs, database schemas, and cloud deployment pipelines using React, Next.js, Node.js, Express, Supabase, and PostgreSQL."
+    title: "ML Pipeline Architecture",
+    desc: "Engineering scalable pipelines with Scikit-learn, Pandas, NumPy, MySQL/SQLite and deployment on Vercel/Render for real-world reliability."
   },
   {
     num: "03",
-    title: "Creative Engineering",
-    desc: "Pushing spatial web boundaries through WebGL 3D viewports, Three.js shaders, Lenis smooth scrolling, and frame-accurate GSAP scrollytelling physics."
+    title: "Behavioral Intelligence",
+    desc: "Isolation Forest, K-Means, DBSCAN and Random Forest for anomaly detection, achieving 92–94% accuracy with explainable AI layers."
   },
   {
     num: "04",
-    title: "Craftsmanship & Detail",
-    desc: "Prioritizing zero cumulative layout shifts, sub-second global response times, strict WCAG accessibility compliance, and editorial dark mode aesthetics."
+    title: "Research & Deployment",
+    desc: "LangGraph multi-agent research with Gemini/Tavily, stateful mission replanning, and hybrid AI cost estimation with PDF reporting."
   }
 ];
 
@@ -111,8 +111,8 @@ export default function CreatorBuilder() {
               margin: '0 0 20px'
             }}
           >
-            I don't build ordinary websites.<br />
-            <span className="text-gradient">I craft digital experiences beyond ordinary.</span>
+            I don't just train models.<br />
+            <span className="text-gradient">I turn them into reliable products.</span>
           </h2>
           <p
             style={{
@@ -123,7 +123,7 @@ export default function CreatorBuilder() {
               fontWeight: 300
             }}
           >
-            Every project is engineered with intentionality—combining visual design mastery, interactive motion physics, and robust backend engineering.
+            Every system is engineered with intentionality — combining Python/JS, rigorous evaluation, and product-grade deployment from data to real-world impact.
           </p>
         </div>
 

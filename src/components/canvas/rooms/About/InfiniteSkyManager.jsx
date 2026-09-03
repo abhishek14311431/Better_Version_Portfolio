@@ -1319,7 +1319,25 @@ const SkillBalloon = ({ config, revealFactorRef, spreadFactorRef, timeRef }) => 
                     />
                 </mesh>
 
-                {/* Stack Name Text that fades in then out */}
+                {/* Persistent skill label over balloon — covers baked texture text (always visible before pop) */}
+                {!isPopping && (
+                    <Text
+                        position={[0, 0, 0.02]}
+                        fontSize={baseHeight * 0.22}
+                        color="#1a1a1a"
+                        anchorX="center"
+                        anchorY="middle"
+                        font="/fonts/CabinSketch-Bold.ttf"
+                        outlineWidth={0.006}
+                        outlineColor="#fdf8e2"
+                        maxWidth={baseHeight * 1.1}
+                        textAlign="center"
+                    >
+                        {config.label}
+                    </Text>
+                )}
+
+                {/* Stack Name Text that fades in then out — after pop */}
                 {isPopping && textFadeRef.current > 0.01 && (
                     <Text
                         ref={textRef}
