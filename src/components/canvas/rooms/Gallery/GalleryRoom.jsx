@@ -50,7 +50,7 @@ const FALLBACK_PROJECTS = [
         front: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80',
         painted: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80',
         url: 'https://github.com/abhishek14311431/AI-Driven-Continuous-Behavioral-Authentication-System',
-        description: 'Zero-trust system verifying cursor and keystroke behavior every 2s with Isolation Forest to lock on impostors with 0% FAR.',
+        description: 'Zero-trust, single-user system that continuously verifies the owner\'s cursor and keystroke fingerprint every 10–20 seconds with Isolation Forest to instantly lock and email on impostor detection.',
         techStack: ['/textures/gallery/reactlogo.webp', '/textures/gallery/jslogo.webp', '/textures/gallery/firebaselogo.webp']
     },
     {

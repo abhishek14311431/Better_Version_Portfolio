@@ -28,11 +28,11 @@ export const projects = [
     id: "ai-driven-continuous-behavioral-authentication",
     title: "AI-Driven Continuous Behavioral Authentication",
     category: "ML Security / Isolation Forest + Pandas & NumPy",
-    shortDescription: "Zero-trust system verifying cursor and keystroke behavior every 2s with Isolation Forest to lock on impostors with 0% FAR.",
+    shortDescription: "Zero-trust, single-user system that continuously verifies the owner's cursor and keystroke fingerprint every 10–20 seconds with Isolation Forest to instantly lock and email on impostor detection.",
     tags: ["Python", "Isolation Forest", "Pandas", "NumPy", "Scikit-learn", "pynput"],
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
     caseStudy: {
-      overview: "Zero-trust system verifying cursor and keystroke behavior every 2s with Isolation Forest to lock on impostors.",
+      overview: "Zero-trust, single-user system that continuously verifies the owner's cursor and keystroke fingerprint every 10–20 seconds with Isolation Forest to instantly lock and email on impostor detection.",
       challenge: "Verify continuously without impostor training data and without false alarms from noisy events.",
       approach: "Engineered 21-feature fusion with StandardScaler and one-class Isolation Forest plus threshold logic ALLOW/MONITOR/LOCK.",
       solution: "Background threading service with cross-platform lock and Gmail SMTP retry queue for reliable alerts.",
