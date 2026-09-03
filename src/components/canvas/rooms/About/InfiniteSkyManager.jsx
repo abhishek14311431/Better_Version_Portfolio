@@ -972,11 +972,6 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
                         side={THREE.DoubleSide}
                     />
                 </mesh>
-                {/* Cover baked "UO" large text */}
-                <mesh position={[0, 0.95, 0.02]}>
-                    <planeGeometry args={[1.9, 0.95]} />
-                    <meshBasicMaterial color="#fdf8e2" transparent opacity={1} depthWrite={false} />
-                </mesh>
                 <Text
                     position={[0, 0.95, 0.03]}
                     fontSize={0.62}
@@ -987,10 +982,10 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
                 >
                     CSE
                 </Text>
-                {/* Small sign — keep visible */}
+                {/* Small sign — CSE */}
                 <Text
-                    position={[0.1, -0.85, 0.1]}
-                    fontSize={0.32}
+                    position={[0.1, -0.75, 0.1]}
+                    fontSize={0.28}
                     color="#1a1a1a"
                     anchorX="center"
                     anchorY="middle"
@@ -1010,11 +1005,6 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
                         side={THREE.DoubleSide}
                     />
                 </mesh>
-                {/* Cover baked "FREELANCE" large text */}
-                <mesh position={[0, 0.95, 0.02]}>
-                    <planeGeometry args={[2.9, 0.95]} />
-                    <meshBasicMaterial color="#fdf8e2" transparent opacity={1} depthWrite={false} />
-                </mesh>
                 <Text
                     position={[0, 0.95, 0.03]}
                     fontSize={0.48}
@@ -1025,24 +1015,16 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
                 >
                     INTERNSHIP
                 </Text>
-                {/* Small sign — fit both lines inside white box */}
+                {/* Small sign — single line MANTHA ARCHITECTS properly centered */}
                 <Text
-                    position={[0, -0.58, 0.1]}
-                    fontSize={0.22}
+                    position={[0, -0.70, 0.1]}
+                    fontSize={0.18}
                     color="#1a1a1a"
                     anchorX="center"
                     anchorY="middle"
                     font="/fonts/CabinSketch-Bold.ttf"
-                >
-                    INTERNSHIP
-                </Text>
-                <Text
-                    position={[0, -0.82, 0.1]}
-                    fontSize={0.14}
-                    color="#4a4a4a"
-                    anchorX="center"
-                    anchorY="middle"
-                    font="/fonts/CabinSketch-Bold.ttf"
+                    maxWidth={2.1}
+                    textAlign="center"
                 >
                     MANTHA ARCHITECTS
                 </Text>
