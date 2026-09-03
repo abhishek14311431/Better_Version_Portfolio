@@ -972,16 +972,6 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
                         side={THREE.DoubleSide}
                     />
                 </mesh>
-                <Text
-                    position={[0, 0.95, 0.03]}
-                    fontSize={0.62}
-                    color="#1a1a1a"
-                    anchorX="center"
-                    anchorY="middle"
-                    font="/fonts/CabinSketch-Bold.ttf"
-                >
-                    CSE
-                </Text>
                 {/* Small sign — CSE */}
                 <Text
                     position={[0.1, -0.75, 0.1]}
@@ -1005,16 +995,6 @@ const JourneyMilestone = ({ z, scrollProgressRef }) => {
                         side={THREE.DoubleSide}
                     />
                 </mesh>
-                <Text
-                    position={[0, 0.95, 0.03]}
-                    fontSize={0.48}
-                    color="#1a1a1a"
-                    anchorX="center"
-                    anchorY="middle"
-                    font="/fonts/CabinSketch-Bold.ttf"
-                >
-                    INTERNSHIP
-                </Text>
                 {/* Small sign — single line MANTHA ARCHITECTS properly centered */}
                 <Text
                     position={[0, -0.70, 0.1]}
