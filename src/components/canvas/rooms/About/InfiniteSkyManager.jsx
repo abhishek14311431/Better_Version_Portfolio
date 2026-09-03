@@ -496,6 +496,7 @@ const AwardsMilestone = ({ z, scrollProgressRef }) => {
     const sotyRef = useRef();
     const sotdRef = useRef();
     const sotmRef = useRef();
+    const internshipRef = useRef();
 
     // Card reveal refs (driven by button hover)
     const sotdCardRevealRef = useRef();
@@ -507,6 +508,9 @@ const AwardsMilestone = ({ z, scrollProgressRef }) => {
     const sotyCardRevealRef = useRef();
     const sotyCardPaintedRef = useRef();
     const sotyHideDelayRef = useRef();
+    const internshipCardRevealRef = useRef();
+    const internshipCardPaintedRef = useRef();
+    const internshipHideDelayRef = useRef();
 
     // Load textures
     const sotyTexture = useLoader(THREE.TextureLoader, '/textures/about/SOTY.webp');
@@ -665,7 +669,7 @@ const AwardsMilestone = ({ z, scrollProgressRef }) => {
                 <AwardButton
                     onClick={(e) => {
                         e.stopPropagation();
-                        openOverlay(awardsData.sotd);
+                        window.open('https://catalog-education.oracle.com/ords/certview/sharebadge?id=073B1FF0AAC35989DA09FC2FFF738175AA99814F4C97E68E21B51869E2730453', '_blank');
                     }}
                     texture={buttonTexture}
                     paintedTexture={buttonPaintedTexture}
@@ -677,24 +681,26 @@ const AwardsMilestone = ({ z, scrollProgressRef }) => {
                 {/* AWARD LABEL */}
                 <Text
                     position={[0, 0.95, 0.01]}
-                    fontSize={0.4}
+                    fontSize={0.26}
                     color="#1a1a1a"
                     anchorX="center"
                     anchorY="middle"
                     font="/fonts/CabinSketch-Bold.ttf"
+                    maxWidth={2.4}
+                    textAlign="center"
                 >
-                    DEVELOPER
+                    ORACLE DATA PLATFORM
                 </Text>
                 {/* CAPACITY SUBTITLE */}
                 <Text
                     position={[0, 0.1, 0.01]}
-                    fontSize={0.2}
+                    fontSize={0.18}
                     color="#4a4a4a"
                     anchorX="center"
                     anchorY="middle"
                     font="/fonts/CabinSketch-Regular.ttf"
                 >
-                    React & Next.js
+                    Mar 2026
                 </Text>
             </group>
 
@@ -726,7 +732,7 @@ const AwardsMilestone = ({ z, scrollProgressRef }) => {
                 <AwardButton
                     onClick={(e) => {
                         e.stopPropagation();
-                        openOverlay(awardsData.sotm);
+                        window.open('https://catalog-education.oracle.com/ords/certview/sharebadge?id=54780D3E5B8F39A9CF7A66503A84CA5A09227260D237F4C8165E385C10CE68B8', '_blank');
                     }}
                     texture={buttonTexture}
                     paintedTexture={buttonPaintedTexture}
@@ -738,24 +744,26 @@ const AwardsMilestone = ({ z, scrollProgressRef }) => {
                 {/* AWARD LABEL */}
                 <Text
                     position={[0, 0.95, 0.01]}
-                    fontSize={0.4}
+                    fontSize={0.28}
                     color="#1a1a1a"
                     anchorX="center"
                     anchorY="middle"
                     font="/fonts/CabinSketch-Bold.ttf"
+                    maxWidth={2.4}
+                    textAlign="center"
                 >
-                    FULL STACK
+                    AI FOUNDATIONS
                 </Text>
                 {/* CAPACITY SUBTITLE */}
                 <Text
                     position={[0, 0.1, 0.01]}
-                    fontSize={0.2}
+                    fontSize={0.18}
                     color="#4a4a4a"
                     anchorX="center"
                     anchorY="middle"
                     font="/fonts/CabinSketch-Regular.ttf"
                 >
-                    Node & Databases
+                    Oct 2025
                 </Text>
             </group>
 
@@ -786,7 +794,7 @@ const AwardsMilestone = ({ z, scrollProgressRef }) => {
                 <AwardButton
                     onClick={(e) => {
                         e.stopPropagation();
-                        openOverlay(awardsData.other);
+                        window.open('https://drive.google.com/file/d/1fGqwGTVDj9pod4YpA7kOrJNKZvkKP2Hi/view', '_blank');
                     }}
                     texture={buttonTexture}
                     paintedTexture={buttonPaintedTexture}
@@ -798,25 +806,51 @@ const AwardsMilestone = ({ z, scrollProgressRef }) => {
                 {/* AWARD LABEL */}
                 <Text
                     position={[0, 0.95, 0.01]}
-                    fontSize={0.4}
+                    fontSize={0.28}
                     color="#1a1a1a"
                     anchorX="center"
                     anchorY="middle"
                     font="/fonts/CabinSketch-Bold.ttf"
+                    maxWidth={2.4}
+                    textAlign="center"
                 >
-                    CREATIVE
+                    PYTHON WITH DSA
                 </Text>
                 {/* CAPACITY SUBTITLE */}
                 <Text
                     position={[0, 0.1, 0.01]}
-                    fontSize={0.2}
+                    fontSize={0.18}
                     color="#4a4a4a"
                     anchorX="center"
                     anchorY="middle"
                     font="/fonts/CabinSketch-Regular.ttf"
                 >
-                    3D & Motion Physics
+                    Jul 2025
                 </Text>
+            </group>
+
+            {/* === INTERNSHIP CERTIFICATE (4th card — front lower) === */}
+            <group ref={internshipRef} position={[0, -1.2, 0.2]}>
+                <mesh ref={internshipCardPaintedRef} position={[0, 0, -0.001]} visible={true}>
+                    <planeGeometry args={[cardHeight * cardLegacyAspect, cardHeight]} />
+                    <meshBasicMaterial color="#fcf3c6" map={sotyPaintedTexture} transparent opacity={0} side={THREE.DoubleSide} alphaTest={0.5} />
+                </mesh>
+                <mesh>
+                    <planeGeometry args={[cardHeight * cardLegacyAspect, cardHeight]} />
+                    <revealBasicMaterial ref={internshipCardRevealRef} map={sotmTexture} transparent side={THREE.DoubleSide} uProgress={0.0} />
+                </mesh>
+                <AwardButton
+                    onClick={(e) => { e.stopPropagation(); window.open('https://drive.google.com/file/d/1k23IieZexkiBd10yYdqkZVer2O_Zb1PK/view', '_blank'); }}
+                    texture={buttonTexture}
+                    paintedTexture={buttonPaintedTexture}
+                    width={buttonWidth}
+                    height={buttonHeight}
+                    position={[0, buttonY, 0.05]}
+                    onHoverChange={makeCardHoverHandler(internshipCardRevealRef, internshipCardPaintedRef, internshipHideDelayRef)}
+                />
+                <Text position={[0, 0.95, 0.01]} fontSize={0.24} color="#1a1a1a" anchorX="center" anchorY="middle" font="/fonts/CabinSketch-Bold.ttf" maxWidth={2.4} textAlign="center">INTERNSHIP</Text>
+                <Text position={[0, 0.65, 0.01]} fontSize={0.18} color="#1a1a1a" anchorX="center" anchorY="middle" font="/fonts/CabinSketch-Bold.ttf" maxWidth={2.4} textAlign="center">MANTHA ARCHITECTS</Text>
+                <Text position={[0, 0.1, 0.01]} fontSize={0.16} color="#4a4a4a" anchorX="center" anchorY="middle" font="/fonts/CabinSketch-Regular.ttf">Sep 2025</Text>
             </group>
         </group>
     );
