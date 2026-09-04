@@ -528,21 +528,7 @@ const ContentCard = ({ content, isOpen, onClose, isMobile }) => {
                                 {content.description}
                             </p>
 
-                            {/* Action Button */}
-                            <div style={{
-                                marginTop: 'auto',
-                                paddingTop: '1rem',
-                                ...getStaggerStyle(400)
-                            }}>
-                                <a
-                                    href={content.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="studio-action-button"
-                                >
-                                    Open Link ↗
-                                </a>
-                            </div>
+                            {/* Action Button removed per request — no links inside spiral */}
                         </>
                     )}
                 </div>
