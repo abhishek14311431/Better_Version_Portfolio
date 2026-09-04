@@ -199,8 +199,8 @@ const RoomInterior = memo(({ label, showRoom, onReady, isExiting }) => {
                                 <GalleryRoom showRoom={showRoom} onReady={onReady} isExiting={isExiting} />
                             </Suspense>
                         </group>
-                    ) : label === 'THE STUDIO' ? (
-                        // === NEW STUDIO ROOM ===
+                    ) : label === 'THE STUDIO' || label === 'CAREER' ? (
+                        // === NEW STUDIO ROOM (also CAREER) ===
                         <group position={[0, -0.5, -corridorDepth]}>
                             <Suspense fallback={null}>
                                 <StudioRoom showRoom={showRoom} onReady={onReady} isExiting={isExiting} />
