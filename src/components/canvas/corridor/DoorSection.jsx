@@ -1189,24 +1189,6 @@ const DoorSection = ({
                             <meshBasicMaterial color="#fcf3c6" transparent={true} opacity={0} depthWrite={false} />
                         </mesh>
 
-                        {/* Studio door map stickers — cover Instagram/TikTok/YouTube */}
-                        {label === 'CAREER' && (
-                            <group position={[doorMeshX, -0.2, 0.015]}>
-                                <group position={[0, 0.75, 0.01]}>
-                                    <mesh><planeGeometry args={[0.65, 0.32]} /><meshBasicMaterial color="#fdf8e2" transparent opacity={0.95} /></mesh>
-                                    <Text position={[0,0,0.01]} fontSize={0.13} color="#1a1a1a" anchorX="center" anchorY="middle" font="/fonts/CabinSketch-Bold.ttf">🗺️ MAPS</Text>
-                                </group>
-                                <group position={[0, 0, 0.01]}>
-                                    <mesh><planeGeometry args={[0.65, 0.32]} /><meshBasicMaterial color="#fdf8e2" transparent opacity={0.95} /></mesh>
-                                    <Text position={[0,0,0.01]} fontSize={0.13} color="#1a1a1a" anchorX="center" anchorY="middle" font="/fonts/CabinSketch-Bold.ttf">📍 LOCATION</Text>
-                                </group>
-                                <group position={[0, -0.75, 0.01]}>
-                                    <mesh><planeGeometry args={[0.65, 0.32]} /><meshBasicMaterial color="#fdf8e2" transparent opacity={0.95} /></mesh>
-                                    <Text position={[0,0,0.01]} fontSize={0.13} color="#1a1a1a" anchorX="center" anchorY="middle" font="/fonts/CabinSketch-Bold.ttf">🧭 CAREER</Text>
-                                </group>
-                            </group>
-                        )}
-
                         {/* Painted layer (behind sketch) - hidden after 2 frames to precompile shader */}
                         <mesh
                             ref={doorPaintedRef}
