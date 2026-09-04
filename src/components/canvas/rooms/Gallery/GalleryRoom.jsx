@@ -33,12 +33,12 @@ export const GALLERY_INTERACTION_AUDIO_SETTINGS = {
     rolloff: 2        // How fast the sound fades away (exponential)
 };
 
-// Define the unique projects and their textures — ML portfolio (5 flagship projects) with related images + single-line descriptions
+// Define the unique projects and their textures — ML portfolio (5 flagship projects) with sketch front + photo painted for hover reveal
 const FALLBACK_PROJECTS = [
     {
         id: 'ai-driven-construction-cost-estimation',
         title: 'AI DRIVEN CONSTRUCTION COST ESTIMATION',
-        front: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80',
+        front: '/textures/gallery/timberkittyprzod.webp',
         painted: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80',
         url: 'https://github.com/abhishek14311431/AI-DRIVEN-CONSTRUCTION-COST-ESTIMATION',
         description: 'AI platform estimating construction costs across 6 project types with Random Forest valuations and PDF reports via FastAPI + React.',
@@ -47,7 +47,7 @@ const FALLBACK_PROJECTS = [
     {
         id: 'ai-driven-continuous-behavioral-authentication',
         title: 'CONTINUOUS BEHAVIORAL AUTHENTICATION',
-        front: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80',
+        front: '/textures/gallery/monetuneprzod.webp',
         painted: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80',
         url: 'https://github.com/abhishek14311431/AI-Driven-Continuous-Behavioral-Authentication-System',
         description: 'Zero-trust, single-user system that continuously verifies the owner\'s cursor and keystroke fingerprint every 10–20 seconds with Isolation Forest to instantly lock and email on impostor detection.',
@@ -56,7 +56,7 @@ const FALLBACK_PROJECTS = [
     {
         id: 'uniguard-unusual-login-activity-detection',
         title: 'UNIGUARD LOGIN ANOMALY DETECTION',
-        front: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80',
+        front: '/textures/gallery/bioprzod.webp',
         painted: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80',
         url: 'https://github.com/abhishek14311431/Unusual-Login-Activity-Detection-in-University-IT-Systems',
         description: 'Unsupervised K-Means & DBSCAN detector scoring unusual university logins with FastAPI + React dashboard and Docker/Jenkins.',
@@ -65,7 +65,7 @@ const FALLBACK_PROJECTS = [
     {
         id: 'ai-investment-research-agent',
         title: 'AI INVESTMENT RESEARCH AGENT',
-        front: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80',
+        front: '/textures/gallery/youngmultiprzod.webp',
         painted: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80',
         url: 'https://github.com/abhishek14311431/AI-Investment-Research-Agent',
         description: 'Multi-agent researcher validating companies via Tavily + Gemini then running 5 agents through LangGraph to output INVEST/PASS scores.',
@@ -74,7 +74,7 @@ const FALLBACK_PROJECTS = [
     {
         id: 'adaptivemission-ai-rebuilds-when-reality-changes',
         title: 'ADAPTIVEMISSION — AI REBUILDS WHEN REALITY CHANGES',
-        front: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80',
+        front: '/textures/gallery/monetuneprzod.webp',
         painted: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80',
         url: 'https://github.com/abhishek14311431/Adaptive_mission--AI-ReBuilds-When-Reality-Changes',
         description: 'Stateful mission planner understanding natural language and replanning multimodal routes from current location on real events.',
